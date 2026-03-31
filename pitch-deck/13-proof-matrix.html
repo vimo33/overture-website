@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sonic Void — Slide 13: Critical Path</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Epilogue:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed-dim": "#00e6e6",
+                        "surface-variant": "#341a46",
+                        "on-background": "#f5ddff",
+                        "on-primary-fixed": "#004343",
+                        "on-secondary-container": "#fff5f9",
+                        "secondary-dim": "#ff51fa",
+                        "outline": "#846d91",
+                        "secondary": "#ff51fa",
+                        "on-secondary-fixed": "#620061",
+                        "on-primary": "#006767",
+                        "primary-container": "#00ffff",
+                        "on-tertiary-fixed": "#3d2b00",
+                        "tertiary": "#ffd16f",
+                        "tertiary-fixed-dim": "#eeb200",
+                        "on-surface": "#f5ddff",
+                        "surface-container-high": "#2d153d",
+                        "primary-dim": "#00e6e6",
+                        "primary": "#c1fffe",
+                        "secondary-container": "#a900a9",
+                        "error-container": "#a70138",
+                        "tertiary-fixed": "#ffbf00",
+                        "tertiary-container": "#ffbf00",
+                        "surface-container-low": "#1e0a2c",
+                        "surface-container-highest": "#341a46",
+                        "on-error-container": "#ffb2b9",
+                        "secondary-fixed": "#ffbdf3",
+                        "on-tertiary-container": "#563e00",
+                        "on-tertiary": "#614700",
+                        "surface-container-lowest": "#000000",
+                        "surface-dim": "#170624",
+                        "surface": "#170624",
+                        "on-primary-fixed-variant": "#006262",
+                        "on-primary-container": "#005d5d",
+                        "inverse-primary": "#006a6a",
+                        "on-error": "#490013",
+                        "outline-variant": "#544061",
+                        "on-tertiary-fixed-variant": "#614700",
+                        "tertiary-dim": "#eeb200",
+                        "error": "#ff6e84",
+                        "surface-tint": "#c1fffe",
+                        "surface-container": "#250f34",
+                        "secondary-fixed-dim": "#ffa6f3",
+                        "on-surface-variant": "#bca2c9",
+                        "error-dim": "#d73357",
+                        "surface-bright": "#3c204f",
+                        "on-secondary": "#400040",
+                        "background": "#170624",
+                        "on-secondary-fixed-variant": "#920091",
+                        "inverse-surface": "#fff7fd",
+                        "inverse-on-surface": "#624d6f",
+                        "primary-fixed": "#00f5f5"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Epilogue"],
+                        "label": ["Space Grotesk"],
+                        "mono": ["JetBrains Mono"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #000000;
+            color: #f5ddff;
+            font-family: 'Epilogue', sans-serif;
+            overflow: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .neon-glow-primary {
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+        }
+        .brutalist-grid {
+            background-image: 
+                linear-gradient(to right, rgba(84, 64, 97, 0.1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(84, 64, 97, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+
+<link rel="stylesheet" href="../assets/css/pitch-deck.css"/>
+<script defer src="../assets/js/pitch-deck.js"></script>
+</head>
+<body class="h-screen flex flex-col brutalist-grid deck-root" data-prev="./12-fairness-in-practice.html" data-next="./14-impact-kpis.html">
+<a class="deck-index-link" href="./index.html">All Slides</a>
+<div class="deck-slide-number">13</div>
+<a class="deck-hitzone deck-hitzone--prev" data-deck-nav="prev" href="./12-fairness-in-practice.html">Previous slide</a>
+<a class="deck-hitzone deck-hitzone--next" data-deck-nav="next" href="./14-impact-kpis.html">Next slide</a>
+
+<!-- Header Section -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-8 bg-transparent">
+<div class="flex flex-col">
+<h1 class="text-2xl font-black text-cyan-400 tracking-tighter uppercase font-headline">Sonic Void</h1>
+<span class="font-headline uppercase tracking-widest text-[10px] text-cyan-400/60">Risk Assessment Matrix // Slide 13</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-mono text-xs text-secondary px-3 py-1 bg-secondary/10 border border-secondary/20">CONFIDENTIAL_CORE_PITCH</span>
+<span class="material-symbols-outlined text-cyan-400">more_vert</span>
+</div>
+</header>
+<!-- Main Content: Data Dashboard Grid -->
+<main class="flex-1 mt-32 px-12 pb-12 flex flex-col">
+<div class="mb-12 flex items-baseline gap-6">
+<h2 class="text-7xl font-black font-headline text-on-surface uppercase tracking-tight leading-none">What Must Be Proven.</h2>
+<div class="h-1 flex-1 bg-gradient-to-r from-cyan-400 to-transparent opacity-30"></div>
+</div>
+<div class="flex-1 grid grid-cols-12 gap-0 border-t border-l border-outline-variant/30">
+<!-- Table Header -->
+<div class="col-span-6 border-r border-b border-outline-variant/30 bg-surface-container-lowest p-6">
+<span class="font-headline text-xs font-bold uppercase tracking-[0.2em] text-cyan-400/50">Core Question</span>
+</div>
+<div class="col-span-2 border-r border-b border-outline-variant/30 bg-surface-container-lowest p-6">
+<span class="font-headline text-xs font-bold uppercase tracking-[0.2em] text-cyan-400/50">Status</span>
+</div>
+<div class="col-span-4 border-r border-b border-outline-variant/30 bg-surface-container-lowest p-6">
+<span class="font-headline text-xs font-bold uppercase tracking-[0.2em] text-cyan-400/50">Mitigation Strategy</span>
+</div>
+<!-- Row 1 -->
+<div class="col-span-6 border-r border-b border-outline-variant/30 bg-surface p-8 flex items-start gap-4 group hover:bg-surface-bright transition-colors">
+<span class="font-mono text-cyan-400 text-lg opacity-50">01</span>
+<p class="text-2xl font-headline font-bold text-on-surface leading-tight">Will enough Zurich residents pay for premium underground access?</p>
+</div>
+<div class="col-span-2 border-r border-b border-outline-variant/30 bg-surface p-8 flex items-center">
+<span class="font-mono text-xs font-bold bg-error-container text-on-error-container px-3 py-1 uppercase tracking-wider">[Untested]</span>
+</div>
+<div class="col-span-4 border-r border-b border-outline-variant/30 bg-surface p-8 group hover:bg-surface-container-high transition-colors">
+<p class="text-on-surface-variant font-body leading-relaxed border-l-2 border-cyan-400 pl-4">Pre-sale campaign launch targeting early adopters with exclusive tier-zero pricing and FOMO-driven scarcity.</p>
+</div>
+<!-- Row 2 -->
+<div class="col-span-6 border-r border-b border-outline-variant/30 bg-surface-container-low p-8 flex items-start gap-4 group hover:bg-surface-bright transition-colors">
+<span class="font-mono text-cyan-400 text-lg opacity-50">02</span>
+<p class="text-2xl font-headline font-bold text-on-surface leading-tight">Will high-capacity venues participate in a decentralized model?</p>
+</div>
+<div class="col-span-2 border-r border-b border-outline-variant/30 bg-surface-container-low p-8 flex items-center">
+<span class="font-mono text-xs font-bold bg-tertiary-container text-on-tertiary-container px-3 py-1 uppercase tracking-wider">[Assumed]</span>
+</div>
+<div class="col-span-4 border-r border-b border-outline-variant/30 bg-surface-container-low p-8 group hover:bg-surface-container-high transition-colors">
+<p class="text-on-surface-variant font-body leading-relaxed border-l-2 border-cyan-400 pl-4">Secure 3 signed LOIs from anchor venues by Q3. Demonstrate revenue-share upside vs. traditional flat-fee rentals.</p>
+</div>
+<!-- Row 3 -->
+<div class="col-span-6 border-r border-b border-outline-variant/30 bg-surface p-8 flex items-start gap-4 group hover:bg-surface-bright transition-colors">
+<span class="font-mono text-cyan-400 text-lg opacity-50">03</span>
+<p class="text-2xl font-headline font-bold text-on-surface leading-tight">Can we curate a consistent programming identity across 12 nights?</p>
+</div>
+<div class="col-span-2 border-r border-b border-outline-variant/30 bg-surface p-8 flex items-center">
+<span class="font-mono text-xs font-bold bg-secondary-container text-on-secondary-container px-3 py-1 uppercase tracking-wider">[Unproven]</span>
+</div>
+<div class="col-span-4 border-r border-b border-outline-variant/30 bg-surface p-8 group hover:bg-surface-container-high transition-colors">
+<p class="text-on-surface-variant font-body leading-relaxed border-l-2 border-cyan-400 pl-4">Cultural-capital challenge: Partner with niche label curators to ensure authenticity and genre-specific excellence.</p>
+</div>
+<!-- Row 4 -->
+<div class="col-span-6 border-r border-b border-outline-variant/30 bg-surface-container-low p-8 flex items-start gap-4 group hover:bg-surface-bright transition-colors">
+<span class="font-mono text-cyan-400 text-lg opacity-50">04</span>
+<p class="text-2xl font-headline font-bold text-on-surface leading-tight">Will artist payout floor be sustainable under projected traffic?</p>
+</div>
+<div class="col-span-2 border-r border-b border-outline-variant/30 bg-surface-container-low p-8 flex items-center">
+<span class="font-mono text-xs font-bold bg-primary-container text-on-primary-container px-3 py-1 uppercase tracking-wider">[Modeled]</span>
+</div>
+<div class="col-span-4 border-r border-b border-outline-variant/30 bg-surface-container-low p-8 group hover:bg-surface-container-high transition-colors">
+<p class="text-on-surface-variant font-body leading-relaxed border-l-2 border-cyan-400 pl-4">Start with lean formats. Use dynamic ticket scaling where artist payouts increase directly with real-time gate receipts.</p>
+</div>
+<!-- Row 5 -->
+<div class="col-span-6 border-r border-b border-outline-variant/30 bg-surface p-8 flex items-start gap-4 group hover:bg-surface-bright transition-colors">
+<span class="font-mono text-cyan-400 text-lg opacity-50">05</span>
+<p class="text-2xl font-headline font-bold text-on-surface leading-tight">Can operations run at 20% overhead without quality degradation?</p>
+</div>
+<div class="col-span-2 border-r border-b border-outline-variant/30 bg-surface p-8 flex items-center">
+<span class="font-mono text-xs font-bold bg-surface-container-highest text-cyan-400 px-3 py-1 uppercase tracking-wider">[Tight]</span>
+</div>
+<div class="col-span-4 border-r border-b border-outline-variant/30 bg-surface p-8 group hover:bg-surface-container-high transition-colors">
+<p class="text-on-surface-variant font-body leading-relaxed border-l-2 border-cyan-400 pl-4">Volunteer labor/Founder labor heavy initial phase. Transition to automated scheduling tools to minimize payroll leakage.</p>
+</div>
+</div>
+<!-- Footer / Technical Stats -->
+<footer class="mt-auto pt-12 flex justify-between items-end">
+<div class="flex gap-12">
+<div class="flex flex-col">
+<span class="font-mono text-[10px] uppercase text-cyan-400/40">Confidence Index</span>
+<div class="flex gap-1 mt-2">
+<div class="w-2 h-6 bg-cyan-400"></div>
+<div class="w-2 h-6 bg-cyan-400"></div>
+<div class="w-2 h-6 bg-cyan-400"></div>
+<div class="w-2 h-6 bg-cyan-400/20"></div>
+<div class="w-2 h-6 bg-cyan-400/20"></div>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-[10px] uppercase text-cyan-400/40">Market Readiness</span>
+<div class="flex gap-1 mt-2">
+<div class="w-2 h-6 bg-secondary"></div>
+<div class="w-2 h-6 bg-secondary"></div>
+<div class="w-2 h-6 bg-secondary/20"></div>
+<div class="w-2 h-6 bg-secondary/20"></div>
+<div class="w-2 h-6 bg-secondary/20"></div>
+</div>
+</div>
+</div>
+<div class="relative w-96 h-32 overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<img alt="Dark abstract technical grid with glowing blue lines and digital noise" class="w-full h-full object-cover grayscale" data-alt="Dark abstract technical grid with glowing blue lines and digital noise on black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvACkTw44B38Qx2gGUENGU5S3-qIraVZWKvuHsjtrzHe8bcU6tiQyqJSPaqx2UbAfDZapwZ-HBGGKqHUFwKP7eec3i4lqWrB5cnCkMOA95bl7DeXjghmtT_W-JCzam03g_-hH_Sf2q7nAaevnlY8oHLjsF9nPjK55LMx2nHtgPkKBFUePaaF2kP5P4b4J7KVC4BfNEhsTIZnLdI0nuh2-qYyBoq7eMFuX94ZwYEPunnSb_0zlmg8PDsQ-r6Dn7Z6R3yGM7m3zcIpU"/>
+</div>
+<div class="absolute inset-0 p-4 flex flex-col justify-end">
+<span class="font-mono text-[10px] text-cyan-400 uppercase leading-none">V_DATA_FLUX_2024</span>
+<div class="h-[2px] w-full bg-cyan-400/30 mt-2"></div>
+</div>
+</div>
+</footer>
+</main>
+<!-- Background Decoration -->
+</body></html>

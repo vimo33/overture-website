@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Epilogue:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#544061",
+                        "on-error": "#490013",
+                        "on-background": "#f5ddff",
+                        "surface-container-highest": "#341a46",
+                        "surface": "#170624",
+                        "surface-tint": "#c1fffe",
+                        "primary-dim": "#00e6e6",
+                        "surface-bright": "#3c204f",
+                        "inverse-surface": "#fff7fd",
+                        "on-secondary": "#400040",
+                        "surface-container-low": "#1e0a2c",
+                        "error-dim": "#d73357",
+                        "secondary": "#ff51fa",
+                        "primary-container": "#00ffff",
+                        "on-primary-fixed-variant": "#006262",
+                        "primary": "#c1fffe",
+                        "on-tertiary-container": "#563e00",
+                        "on-primary-container": "#005d5d",
+                        "on-primary-fixed": "#004343",
+                        "tertiary-dim": "#eeb200",
+                        "inverse-on-surface": "#624d6f",
+                        "surface-container-lowest": "#000000",
+                        "secondary-dim": "#ff51fa",
+                        "on-error-container": "#ffb2b9",
+                        "surface-dim": "#170624",
+                        "primary-fixed-dim": "#00e6e6",
+                        "secondary-fixed": "#ffbdf3",
+                        "tertiary": "#ffd16f",
+                        "on-primary": "#006767",
+                        "secondary-container": "#a900a9",
+                        "primary-fixed": "#00f5f5",
+                        "on-secondary-fixed": "#620061",
+                        "on-secondary-fixed-variant": "#920091",
+                        "on-surface-variant": "#bca2c9",
+                        "tertiary-fixed-dim": "#eeb200",
+                        "surface-variant": "#341a46",
+                        "surface-container": "#250f34",
+                        "error-container": "#a70138",
+                        "error": "#ff6e84",
+                        "tertiary-fixed": "#ffbf00",
+                        "on-tertiary-fixed": "#3d2b00",
+                        "on-surface": "#f5ddff",
+                        "inverse-primary": "#006a6a",
+                        "surface-container-high": "#2d153d",
+                        "on-tertiary": "#614700",
+                        "tertiary-container": "#ffbf00",
+                        "on-secondary-container": "#fff5f9",
+                        "background": "#170624",
+                        "on-tertiary-fixed-variant": "#614700",
+                        "secondary-fixed-dim": "#ffa6f3",
+                        "outline": "#846d91"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Epilogue"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #170624;
+            color: #f5ddff;
+            font-family: 'Epilogue', sans-serif;
+            overflow-x: hidden;
+        }
+        .sonic-gradient-cyan {
+            background: linear-gradient(45deg, #00ffff, #006767);
+        }
+        .sonic-gradient-magenta {
+            background: linear-gradient(45deg, #ff51fa, #a900a9);
+        }
+        .glow-cyan {
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+        }
+        .glow-magenta {
+            box-shadow: 0 0 40px rgba(255, 81, 250, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<nav class="bg-[#170624] dark:bg-[#000000] docked full-width top-0 z-50 no-border bg-gradient-to-b from-[#170624] to-transparent flat no shadows flex justify-between items-center w-full px-8 py-6 max-w-[1920px] mx-auto sticky">
+<div class="font-['Space_Grotesk'] font-black text-3xl tracking-tighter text-[#00ffff]">OVERTURE</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-sm text-white/70 hover:text-[#ff51fa] transition-colors duration-300" href="#">Members</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-sm text-white/70 hover:text-[#ff51fa] transition-colors duration-300" href="#">Artists</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-sm text-white/70 hover:text-[#ff51fa] transition-colors duration-300" href="#">Venues</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-sm text-white/70 hover:text-[#ff51fa] transition-colors duration-300" href="#">Community</a>
+</div>
+<button class="bg-primary-container text-on-primary px-8 py-3 font-['Space_Grotesk'] font-bold uppercase tracking-widest text-sm scale-95 active:scale-90 transition-transform">
+            GET ACCESS
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex flex-col justify-center px-8 md:px-24 py-20 overflow-hidden">
+<!-- Background Light Leaks -->
+<div class="absolute -top-40 -right-40 w-96 h-96 bg-secondary/5 blur-[120px]"></div>
+<div class="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/5 blur-[120px]"></div>
+<div class="max-w-5xl relative z-10">
+<h1 class="font-headline font-black text-6xl md:text-9xl leading-[0.9] tracking-tighter uppercase mb-8">
+                    Let’s build <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary">something meaningful</span> <br/>
+                    together.
+                </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    Overture is the gateway to the sonic void. Whether you're an artist seeking a stage or a partner building the future, the frequency starts here.
+                </p>
+</div>
+</section>
+<!-- Inquiry Grid -->
+<section class="px-8 md:px-24 py-12 mb-32">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-outline-variant/20">
+<!-- Artist Inquiry -->
+<div class="bg-surface-container-low group p-10 hover:bg-surface-container transition-colors duration-500 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-primary text-4xl mb-8" data-icon="mic_external_on">mic_external_on</span>
+<h3 class="font-headline font-bold text-2xl uppercase tracking-tighter mb-4 text-primary">Artist inquiry</h3>
+<p class="font-body text-on-surface-variant mb-12 min-h-[80px]">Join our roster of visionaries. We provide the infrastructure for your sound to resonate across the void.</p>
+<button class="w-full py-4 border-2 border-primary text-primary font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary hover:text-on-primary transition-all">
+                        Get in touch
+                    </button>
+</div>
+<!-- Venue Inquiry -->
+<div class="bg-surface-container-low group p-10 hover:bg-surface-container transition-colors duration-500 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-8" data-icon="stadium">stadium</span>
+<h3 class="font-headline font-bold text-2xl uppercase tracking-tighter mb-4 text-secondary">Venue inquiry</h3>
+<p class="font-body text-on-surface-variant mb-12 min-h-[80px]">Turn your space into a temple of sound. Partner with us for acoustic engineering and curated booking.</p>
+<button class="w-full py-4 border-2 border-secondary text-secondary font-headline font-bold uppercase tracking-widest text-sm hover:bg-secondary hover:text-on-secondary transition-all">
+                        Get in touch
+                    </button>
+</div>
+<!-- Community Inquiry -->
+<div class="bg-surface-container-low group p-10 hover:bg-surface-container transition-colors duration-500 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-tertiary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-tertiary text-4xl mb-8" data-icon="groups_3">groups_3</span>
+<h3 class="font-headline font-bold text-2xl uppercase tracking-tighter mb-4 text-tertiary">Community inquiry</h3>
+<p class="font-body text-on-surface-variant mb-12 min-h-[80px]">For the listeners and the dreamers. Inquire about member-exclusive events and collaborative projects.</p>
+<button class="w-full py-4 border-2 border-tertiary text-tertiary font-headline font-bold uppercase tracking-widest text-sm hover:bg-tertiary hover:text-on-tertiary transition-all">
+                        Get in touch
+                    </button>
+</div>
+<!-- Partnership Inquiry -->
+<div class="bg-surface-container-low group p-10 hover:bg-surface-container transition-colors duration-500 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary-fixed opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-8" data-icon="handshake">handshake</span>
+<h3 class="font-headline font-bold text-2xl uppercase tracking-tighter mb-4 text-primary-fixed">Partnership inquiry</h3>
+<p class="font-body text-on-surface-variant mb-12 min-h-[80px]">Brand alignment for the modern era. Let’s create immersive experiences that redefine audience engagement.</p>
+<button class="w-full py-4 border-2 border-primary-fixed text-primary-fixed font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-fixed hover:text-on-primary-fixed transition-all">
+                        Get in touch
+                    </button>
+</div>
+</div>
+</section>
+<!-- Dynamic Form Section -->
+<section class="bg-surface-container-lowest py-32 px-8">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20">
+<div class="lg:w-1/2">
+<h2 class="font-headline font-black text-5xl uppercase tracking-tighter mb-8 leading-none">Drop a line <br/>into the void</h2>
+<p class="font-body text-lg text-on-surface-variant mb-12">Expect a response within one lunar cycle. Our team of curators and engineers are always listening.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<h4 class="font-headline font-bold uppercase text-sm tracking-widest mb-1">Satellite Office</h4>
+<p class="text-on-surface-variant">42nd Parallel, Void District, Berlin</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="alternate_email">alternate_email</span>
+<div>
+<h4 class="font-headline font-bold uppercase text-sm tracking-widest mb-1">Signal Base</h4>
+<p class="text-on-surface-variant">hello@overture.void</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 bg-surface-container-high p-12 relative">
+<form class="space-y-10">
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-4 font-body text-lg transition-colors placeholder:text-outline" placeholder="Full Name" type="text"/>
+</div>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-4 font-body text-lg transition-colors placeholder:text-outline" placeholder="Email Address" type="email"/>
+</div>
+<div class="relative">
+<select class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-4 font-body text-lg transition-colors text-outline">
+<option>Inquiry Type</option>
+<option>Artist</option>
+<option>Venue</option>
+<option>Community</option>
+<option>Partnership</option>
+</select>
+</div>
+<div class="relative">
+<textarea class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-4 font-body text-lg transition-colors placeholder:text-outline resize-none" placeholder="Tell us about your project" rows="4"></textarea>
+</div>
+<button class="bg-primary text-on-primary font-headline font-black text-xl uppercase tracking-tighter px-12 py-5 w-full md:w-auto hover:bg-primary-fixed transition-colors" type="submit">
+                            Send Signal
+                        </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Visual Anchor -->
+<section class="h-[512px] relative overflow-hidden">
+<img alt="Concert stage crowd" class="w-full h-full object-cover grayscale opacity-40" data-alt="dramatic wide angle shot of a silhouettes of a crowd in a dark concert venue with intense magenta and cyan stage lighting and haze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMNVohOLD0687mqFGn7ZTuut6NAvf2QQMz30wNXEe5M8o-F43VV1Az0jd29NzkADvGt8typs4DYASozX-fE_Fj2KBGRXgYue4WGbKuwgbsXuvdAViSGlBMO14i9Kvu4vjNAe1eBR7W-1xgN0N1SD4YP_8MJt2qhdKq0vBfrc5NLwcQ1X2G58I-psMVXvo5Kf98hiJOz2-oDLaarztdoRYeX4JQU7FcXK_t8ICa8K6UpKI-39oHfkVxE0ZCqjy4PW-V1dcdAh0CFP4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#000000] dark:bg-[#000000] full-width bottom-0 border-t-0 tonal-shift bg-[#170624] glow-sm shadow-[#ff51fa]/20 flex flex-col md:flex-row justify-between items-center w-full px-12 py-20 gap-8">
+<div class="flex flex-col gap-2">
+<div class="font-['Space_Grotesk'] font-bold text-[#00ffff] text-2xl tracking-tighter uppercase">OVERTURE</div>
+<p class="font-['Epilogue'] text-sm uppercase tracking-widest text-white/40">©2024 OVERTURE. THE SONIC VOID AWAITS.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="font-['Epilogue'] text-sm uppercase tracking-widest text-white/40 hover:text-[#00ffff] transition-all" href="#">Mission</a>
+<a class="font-['Epilogue'] text-sm uppercase tracking-widest text-white/40 hover:text-[#00ffff] transition-all" href="#">Transparency</a>
+<a class="font-['Epilogue'] text-sm uppercase tracking-widest text-white/40 hover:text-[#00ffff] transition-all" href="#">Terms</a>
+<a class="font-['Epilogue'] text-sm uppercase tracking-widest text-white/40 hover:text-[#00ffff] transition-all" href="#">Privacy</a>
+</div>
+<div class="flex gap-6">
+<a class="text-white/40 hover:text-secondary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="music_note">music_note</span>
+</a>
+<a class="text-white/40 hover:text-secondary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+</a>
+<a class="text-white/40 hover:text-secondary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="podcasts">podcasts</span>
+</a>
+</div>
+</footer>
+</body></html>

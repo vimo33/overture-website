@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OVERTURE - Why Now</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#ffbf00",
+              "on-error": "#490013",
+              "on-tertiary-fixed-variant": "#614700",
+              "primary-container": "#00ffff",
+              "surface-container-lowest": "#000000",
+              "on-error-container": "#ffb2b9",
+              "tertiary-container": "#ffbf00",
+              "on-surface": "#f5ddff",
+              "error-container": "#a70138",
+              "error-dim": "#d73357",
+              "surface-container-highest": "#341a46",
+              "surface": "#170624",
+              "secondary-dim": "#ff51fa",
+              "background": "#170624",
+              "on-primary-fixed": "#004343",
+              "surface-tint": "#c1fffe",
+              "on-tertiary-container": "#563e00",
+              "surface-variant": "#341a46",
+              "on-surface-variant": "#bca2c9",
+              "error": "#ff6e84",
+              "secondary-fixed-dim": "#ffa6f3",
+              "inverse-primary": "#006a6a",
+              "secondary-container": "#a900a9",
+              "outline": "#846d91",
+              "secondary-fixed": "#ffbdf3",
+              "inverse-surface": "#fff7fd",
+              "surface-container": "#250f34",
+              "surface-dim": "#170624",
+              "tertiary-dim": "#eeb200",
+              "on-tertiary": "#614700",
+              "on-primary": "#006767",
+              "on-secondary-fixed-variant": "#920091",
+              "on-secondary-fixed": "#620061",
+              "on-tertiary-fixed": "#3d2b00",
+              "tertiary": "#ffd16f",
+              "on-primary-container": "#005d5d",
+              "primary-dim": "#00e6e6",
+              "on-secondary-container": "#fff5f9",
+              "on-primary-fixed-variant": "#006262",
+              "primary": "#c1fffe",
+              "surface-bright": "#3c204f",
+              "secondary": "#ff51fa",
+              "surface-container-low": "#1e0a2c",
+              "tertiary-fixed-dim": "#eeb200",
+              "primary-fixed": "#00f5f5",
+              "surface-container-high": "#2d153d",
+              "outline-variant": "#544061",
+              "on-background": "#f5ddff",
+              "on-secondary": "#400040",
+              "inverse-on-surface": "#624d6f",
+              "primary-fixed-dim": "#00e6e6"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Epilogue"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #170624;
+            color: #f5ddff;
+            font-family: 'Epilogue', sans-serif;
+            overflow-x: hidden;
+        }
+        .diagonal-split {
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        }
+        .glow-cyan {
+            box-shadow: -4px 0 0 0 #00ffff;
+        }
+        .noise-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.05;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-transparent">
+<div class="text-2xl font-black text-cyan-400 dark:text-cyan-400 tracking-tighter font-['Space_Grotesk'] uppercase">
+            OVERTURE
+        </div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-cyan-400 cursor-pointer hover:text-fuchsia-500 transition-colors duration-300">grid_view</span>
+<span class="material-symbols-outlined text-cyan-400 cursor-pointer hover:text-fuchsia-500 transition-colors duration-300">more_vert</span>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="relative min-h-screen flex flex-col md:flex-row overflow-hidden">
+<div class="noise-overlay fixed inset-0 z-10"></div>
+<!-- Left Column: Visual Anchor (40%) -->
+<section class="relative w-full md:w-[45%] h-[512px] md:h-screen z-20">
+<div class="absolute inset-0 bg-gradient-to-r from-background to-transparent z-30"></div>
+<img class="w-full h-full object-cover grayscale brightness-50 contrast-125" data-alt="dramatic wide angle shot of a solitary musician under a sharp blue spotlight on a dark stage with haze and cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA_ASE1ZGZ-28T2-mRrjtkjNyPp2dAit_HSIr6kmQQed6RqKbqgJyU3db7PI4bOIpT7wtgK1gnMOq8LINcXd3AAFZKc4O-gPOYV6bElho3YFNm_y3K8HLycwqAPDsnKKlRzIW3aO-ES5KYXAwEzK56p6QPQxd4r-dxPhuABCO0J7btUgofhOrzlQdxKh-qy-91-ebnvPX9I-0QVbOQLlX8izZ_tQZP_29zRDr86R-nlmxP4w4PNPHjdAOWMUF6WVZsmGuPrOx3jak"/>
+<!-- Headline Overlay -->
+<div class="absolute bottom-12 left-8 md:left-16 z-40 max-w-sm">
+<h1 class="font-headline font-black text-7xl md:text-9xl uppercase leading-[0.8] tracking-tighter text-cyan-400 mb-4">
+                    Why<br/>now.
+                </h1>
+<div class="h-1 w-24 bg-secondary"></div>
+</div>
+</section>
+<!-- Right Column: Narrative Data (60%) -->
+<section class="relative w-full md:w-[55%] min-h-screen bg-surface-container-lowest flex items-center px-8 md:px-20 py-24 z-30">
+<!-- Light Leak Decoration -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-secondary/5 blur-[120px] rounded-full -mr-48 -mt-48"></div>
+<div class="grid grid-cols-1 gap-12 w-full max-w-2xl relative">
+<!-- Block 1: Policy -->
+<div class="group relative bg-surface-container-low/40 backdrop-blur-md p-8 glow-cyan transition-all duration-300 hover:bg-surface-container-high/60">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary text-3xl" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+<div>
+<h3 class="font-headline font-bold text-xl uppercase tracking-widest text-on-surface mb-2">Policy momentum</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">
+<span class="text-primary font-bold">Kulturbotschaft 2025–2028</span> makes fair artist pay its first priority, mandating structural changes across the Swiss creative economy.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Block 2: Venue Fragility -->
+<div class="group relative bg-surface-container-low/40 backdrop-blur-md p-8 glow-cyan transition-all duration-300 hover:bg-surface-container-high/60">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">domain_disabled</span>
+<div>
+<h3 class="font-headline font-bold text-xl uppercase tracking-widest text-on-surface mb-2">Venue fragility</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">
+<span class="text-secondary font-bold">Club Zukunft</span> closed March 2025 after 20 years. Traditional nightlife infrastructure is collapsing, creating a vacuum for decentralized alternatives.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Block 3: Audience readiness -->
+<div class="group relative bg-surface-container-low/40 backdrop-blur-md p-8 glow-cyan transition-all duration-300 hover:bg-surface-container-high/60">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+<div>
+<h3 class="font-headline font-bold text-xl uppercase tracking-widest text-on-surface mb-2">Audience readiness</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">
+<span class="text-white font-bold">72% of Swiss attend concerts yearly</span>, yet demand for intimate, curated experiences outpaces the supply of accessible local venues.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Block 4: No existing solution -->
+<div class="group relative bg-surface-container-low/40 backdrop-blur-md p-8 glow-cyan border-l-4 border-error/50 transition-all duration-300 hover:bg-surface-container-high/60">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-error text-3xl">cancel</span>
+<div>
+<h3 class="font-headline font-bold text-xl uppercase tracking-widest text-on-surface mb-2">No existing solution</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">
+                                Legacy platforms like Sofar Sounds pay as low as <span class="text-error font-mono">$100/set</span>. The industry lacks a high-margin, artist-first technological scaffolding.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<footer class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-stretch h-20 bg-zinc-950/90 backdrop-blur-xl dark:bg-black/95 border-t-4 border-cyan-400">
+<!-- Back Item -->
+<button class="flex flex-col items-center justify-center text-zinc-400 p-4 hover:bg-zinc-800 hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="skip_previous">skip_previous</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-tighter">Back</span>
+</button>
+<!-- Status Item -->
+<button class="flex flex-col items-center justify-center text-zinc-400 p-4 hover:bg-zinc-800 hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-tighter">Status</span>
+</button>
+<!-- Deck Item (Active) -->
+<button class="flex flex-col items-center justify-center bg-cyan-400 text-black p-4 scale-110">
+<span class="material-symbols-outlined" data-icon="Layers">layers</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-tighter">Deck</span>
+</button>
+<!-- Data Item -->
+<button class="flex flex-col items-center justify-center text-zinc-400 p-4 hover:bg-zinc-800 hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-tighter">Data</span>
+</button>
+<!-- Next Item -->
+<button class="flex flex-col items-center justify-center text-zinc-400 p-4 hover:bg-zinc-800 hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="skip_next">skip_next</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-tighter">Next</span>
+</button>
+</footer>
+</body></html>

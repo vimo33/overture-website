@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Overture Pitch - Our Solution</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#170624",
+                        "error-container": "#a70138",
+                        "on-tertiary-fixed": "#3d2b00",
+                        "primary": "#c1fffe",
+                        "surface-container-low": "#1e0a2c",
+                        "secondary-dim": "#ff51fa",
+                        "error-dim": "#d73357",
+                        "inverse-primary": "#006a6a",
+                        "outline-variant": "#544061",
+                        "surface-variant": "#341a46",
+                        "tertiary-fixed": "#ffbf00",
+                        "on-secondary-fixed-variant": "#920091",
+                        "on-tertiary-fixed-variant": "#614700",
+                        "on-error": "#490013",
+                        "tertiary-container": "#ffbf00",
+                        "outline": "#846d91",
+                        "error": "#ff6e84",
+                        "on-primary": "#006767",
+                        "on-secondary": "#400040",
+                        "surface-container-high": "#2d153d",
+                        "background": "#170624",
+                        "inverse-surface": "#fff7fd",
+                        "on-tertiary-container": "#563e00",
+                        "surface-container-highest": "#341a46",
+                        "secondary": "#ff51fa",
+                        "primary-container": "#00ffff",
+                        "on-primary-fixed": "#004343",
+                        "on-primary-container": "#005d5d",
+                        "surface-bright": "#3c204f",
+                        "secondary-fixed-dim": "#ffa6f3",
+                        "secondary-container": "#a900a9",
+                        "tertiary": "#ffd16f",
+                        "on-background": "#f5ddff",
+                        "tertiary-fixed-dim": "#eeb200",
+                        "on-tertiary": "#614700",
+                        "on-error-container": "#ffb2b9",
+                        "primary-fixed": "#00f5f5",
+                        "tertiary-dim": "#eeb200",
+                        "primary-dim": "#00e6e6",
+                        "surface": "#170624",
+                        "secondary-fixed": "#ffbdf3",
+                        "on-secondary-fixed": "#620061",
+                        "on-primary-fixed-variant": "#006262",
+                        "surface-container": "#250f34",
+                        "primary-fixed-dim": "#00e6e6",
+                        "on-surface-variant": "#bca2c9",
+                        "on-surface": "#f5ddff",
+                        "inverse-on-surface": "#624d6f",
+                        "surface-tint": "#c1fffe",
+                        "surface-container-lowest": "#000000",
+                        "on-secondary-container": "#fff5f9"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Epilogue"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>body {
+    background-color: #170624;
+    color: #f5ddff;
+    overflow-x: hidden
+    }
+.light-leak-cyan {
+    background: radial-gradient(circle at top left, rgba(0, 255, 255, 0.08) 0%, transparent 60%)
+    }
+.light-leak-magenta {
+    background: radial-gradient(circle at bottom right, rgba(255, 81, 250, 0.05) 0%, transparent 50%)
+    }
+.noise-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuD-IxaTh_whkNnTr1ubNZyMLDNKjSayGEjdBGbZ2hHfN934YHAIylPK4h9tBUUNoIjSaRIIVwE4NSjukWTOl2JyyA9UFO7WX5PlEnoC9RgGi70RHW_rmZe1HLuiLPGiqGAtu47HyfohY08otk4q1Yy8TDSPYogUviNPdvG3atwvP1Md9N0OSulyVoOAYYHKI-GCwjXmV6p3TjuapT7SvwG7jwco0LboiaOYfqBlu-2108rXTPpZFy5ElpCXsDZLy6_rvwVNDdQNHXA);
+    opacity: 0.03;
+    pointer-events: none
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }</style>
+</head>
+<body class="font-body selection:bg-primary selection:text-on-primary">
+<!-- Background Layering -->
+<div class="fixed inset-0 z-0">
+<div class="absolute inset-0 light-leak-cyan"></div>
+<div class="absolute inset-0 light-leak-magenta"></div>
+<div class="absolute inset-0 noise-texture"></div>
+</div>
+<!-- Header / Brand Anchor (As per Shared Components Logic) -->
+<header class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-12 py-8 w-full bg-transparent">
+<div class="font-['Space_Grotesk'] font-black uppercase tracking-tighter text-5xl text-cyan-400 italic">
+            OVERTURE
+        </div>
+<div class="text-white/40 font-label tracking-widest text-sm uppercase">
+            Slide 04 / Our Solution
+        </div>
+</header>
+<main class="relative z-10 min-h-screen flex flex-col md:flex-row items-center px-8 md:px-12 lg:px-24 py-32 gap-12 lg:gap-24">
+<!-- Left Side: Narrative Anchor (Asymmetrical Left-Heavy) -->
+<section class="w-full md:w-3/5 lg:w-1/2 flex flex-col items-start">
+<div class="mb-4">
+<span class="text-secondary font-label font-bold tracking-[0.3em] text-xs uppercase bg-secondary/10 px-3 py-1">The Infrastructure</span>
+</div>
+<h1 class="font-headline font-black text-white text-6xl md:text-8xl lg:text-9xl leading-[0.85] tracking-tighter uppercase mb-12">
+                OUR<br/>SOLUTION
+            </h1>
+<div class="max-w-xl">
+<p class="font-body text-xl md:text-2xl text-on-surface/80 leading-relaxed font-light border-l-4 border-primary pl-8 py-2">
+                    Overture is a subscriber-backed cultural infrastructure platform built to restore the balance between artists and audience through radical transparency and sustainable governance.
+                </p>
+</div>
+<div class="mt-16 flex items-center gap-6">
+<div class="w-24 h-[2px] bg-primary"></div>
+<span class="font-label text-primary uppercase tracking-widest text-sm font-bold">Phase One Protocol</span>
+</div>
+</section>
+<!-- Right Side: Vertical List of Neon-Accented Cards -->
+<section class="w-full md:w-2/5 lg:w-1/2 flex flex-col gap-4">
+<!-- Card 1 -->
+<div class="group relative bg-surface-container-low p-6 transition-all hover:bg-surface-container-high border-l-4 border-primary shadow-[0_0_20px_rgba(0,255,255,0.05)]">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-primary font-label text-xs font-bold tracking-widest uppercase mb-2 block opacity-60">01</span>
+<h3 class="font-headline text-2xl font-bold text-white uppercase tracking-tight">Manual-first pilot</h3>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl opacity-40 group-hover:opacity-100 transition-opacity" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<div class="mt-4 h-[1px] w-full bg-gradient-to-r from-primary/30 to-transparent"></div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-surface-container-low p-6 transition-all hover:bg-surface-container-high border-l-4 border-secondary shadow-[0_0_20px_rgba(255,81,250,0.05)]">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-secondary font-label text-xs font-bold tracking-widest uppercase mb-2 block opacity-60">02</span>
+<h3 class="font-headline text-2xl font-bold text-white uppercase tracking-tight">Verein governance</h3>
+</div>
+<span class="material-symbols-outlined text-secondary text-3xl opacity-40 group-hover:opacity-100 transition-opacity" data-icon="account_balance">account_balance</span>
+</div>
+<div class="mt-4 h-[1px] w-full bg-gradient-to-r from-secondary/30 to-transparent"></div>
+</div>
+<!-- Card 3 -->
+<div class="group relative bg-surface-container-low p-6 transition-all hover:bg-surface-container-high border-l-4 border-tertiary shadow-[0_0_20px_rgba(255,191,0,0.05)]">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-tertiary font-label text-xs font-bold tracking-widest uppercase mb-2 block opacity-60">03</span>
+<h3 class="font-headline text-2xl font-bold text-white uppercase tracking-tight">Published payout rules</h3>
+</div>
+<span class="material-symbols-outlined text-tertiary text-3xl opacity-40 group-hover:opacity-100 transition-opacity" data-icon="policy">policy</span>
+</div>
+<div class="mt-4 h-[1px] w-full bg-gradient-to-r from-tertiary/30 to-transparent"></div>
+</div>
+<!-- Card 4 -->
+<div class="group relative bg-surface-container-low p-6 transition-all hover:bg-surface-container-high border-l-4 border-primary-fixed shadow-[0_0_20px_rgba(0,255,255,0.05)]">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-primary-fixed font-label text-xs font-bold tracking-widest uppercase mb-2 block opacity-60">04</span>
+<h3 class="font-headline text-2xl font-bold text-white uppercase tracking-tight">Direct artist payment</h3>
+</div>
+<span class="material-symbols-outlined text-primary-fixed text-3xl opacity-40 group-hover:opacity-100 transition-opacity" data-icon="payments">payments</span>
+</div>
+<div class="mt-4 h-[1px] w-full bg-gradient-to-r from-primary-fixed/30 to-transparent"></div>
+</div>
+<!-- Card 5 -->
+<div class="group relative bg-surface-container-low p-6 transition-all hover:bg-surface-container-high border-l-4 border-error-dim shadow-[0_0_20px_rgba(215,51,87,0.05)]">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-error-dim font-label text-xs font-bold tracking-widest uppercase mb-2 block opacity-60">05</span>
+<h3 class="font-headline text-2xl font-bold text-white uppercase tracking-tight">Rule-based curation</h3>
+</div>
+<span class="material-symbols-outlined text-error-dim text-3xl opacity-40 group-hover:opacity-100 transition-opacity" data-icon="tune">tune</span>
+</div>
+<div class="mt-4 h-[1px] w-full bg-gradient-to-r from-error-dim/30 to-transparent"></div>
+</div>
+</section>
+</main>
+<!-- Visual Footer Elements -->
+<footer class="fixed bottom-0 left-0 w-full p-12 flex justify-between items-end pointer-events-none">
+<div class="flex flex-col gap-2">
+<div class="flex gap-1">
+<div class="w-1 h-8 bg-primary"></div>
+<div class="w-1 h-12 bg-primary/40"></div>
+<div class="w-1 h-6 bg-primary/60"></div>
+<div class="w-1 h-10 bg-primary/20"></div>
+<div class="w-1 h-4 bg-primary/80"></div>
+</div>
+<p class="font-label text-[10px] text-primary/40 tracking-[0.5em] uppercase">Signal Strength: Optimal</p>
+</div>
+<div class="flex flex-col items-end gap-2">
+<div class="text-right">
+<p class="font-headline text-3xl font-black text-white/10 leading-none">004</p>
+<div class="w-full h-[1px] bg-white/10 mt-1"></div>
+</div>
+</div>
+</footer>
+<!-- Abstract Image Decoration -->
+<div class="fixed top-1/4 -right-24 w-96 h-96 opacity-10 blur-3xl rounded-full bg-primary -z-10"></div>
+<div class="fixed bottom-1/4 -left-24 w-80 h-80 opacity-10 blur-3xl rounded-full bg-secondary -z-10"></div>
+</body></html>

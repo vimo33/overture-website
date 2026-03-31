@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Overture Pitch Deck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=Epilogue:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #170624;
+        --bg-deep: #000;
+        --surface: #250f34;
+        --surface-2: #341a46;
+        --text: #f5ddff;
+        --muted: #bca2c9;
+        --cyan: #00ffff;
+        --magenta: #ff51fa;
+        --outline: rgba(132, 109, 145, 0.32);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Epilogue", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top right, rgba(0, 255, 255, 0.08), transparent 28%),
+          radial-gradient(circle at top left, rgba(255, 81, 250, 0.08), transparent 28%),
+          var(--bg);
+      }
+      .wrap {
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 48px 0 72px;
+      }
+      .brand {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        color: var(--cyan);
+      }
+      h1 {
+        margin: 28px 0 12px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(2.8rem, 7vw, 5.5rem);
+        line-height: 0.9;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+      }
+      p {
+        max-width: 760px;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1px;
+        margin-top: 36px;
+        background: var(--outline);
+      }
+      .card {
+        display: block;
+        padding: 22px;
+        min-height: 164px;
+        background: linear-gradient(180deg, rgba(37, 15, 52, 0.96), rgba(0, 0, 0, 0.92));
+        text-decoration: none;
+      }
+      .card:hover {
+        background: linear-gradient(180deg, rgba(52, 26, 70, 0.96), rgba(37, 15, 52, 0.96));
+      }
+      .num {
+        display: inline-block;
+        margin-bottom: 14px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--magenta);
+      }
+      .title {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="brand">Overture</div>
+      <h1>Pitch Deck Slides</h1>
+      <p>Open any slide directly. Inside the deck, use left/right arrow keys, space, trackpad scroll, or screen-edge click zones to move between slides. Press <strong>H</strong> to return here.</p>
+      <div class="grid">
+        <a class="card" href="./01-introduction.html"><span class="num">01</span><div class="title">Introduction</div></a>
+        <a class="card" href="./02-crisis-in-local-live-culture.html"><span class="num">02</span><div class="title">The Crisis in Local Live Culture</div></a>
+        <a class="card" href="./03-why-now.html"><span class="num">03</span><div class="title">Why Now</div></a>
+        <a class="card" href="./04-our-solution.html"><span class="num">04</span><div class="title">Our Solution</div></a>
+        <a class="card" href="./05-how-it-works.html"><span class="num">05</span><div class="title">How It Works</div></a>
+        <a class="card" href="./06-where-we-are-today.html"><span class="num">06</span><div class="title">Where We Are Today</div></a>
+        <a class="card" href="./07-impact-through-every-subscription.html"><span class="num">07</span><div class="title">Impact Through Every Subscription</div></a>
+        <a class="card" href="./08-the-zurich-opportunity.html"><span class="num">08</span><div class="title">The Zurich Opportunity</div></a>
+        <a class="card" href="./09-financial-scenarios.html"><span class="num">09</span><div class="title">Financial Scenarios</div></a>
+        <a class="card" href="./10-venue-participation-model.html"><span class="num">10</span><div class="title">Venue Participation Model</div></a>
+        <a class="card" href="./11-the-pilot-experiment.html"><span class="num">11</span><div class="title">The Pilot Experiment</div></a>
+        <a class="card" href="./12-fairness-in-practice.html"><span class="num">12</span><div class="title">Fairness in Practice</div></a>
+        <a class="card" href="./13-proof-matrix.html"><span class="num">13</span><div class="title">Proof Matrix</div></a>
+        <a class="card" href="./14-impact-kpis.html"><span class="num">14</span><div class="title">Impact KPIs</div></a>
+        <a class="card" href="./15-alignment.html"><span class="num">15</span><div class="title">Alignment</div></a>
+        <a class="card" href="./16-the-ask.html"><span class="num">16</span><div class="title">The Ask</div></a>
+        <a class="card" href="./17-closing.html"><span class="num">17</span><div class="title">Closing</div></a>
+      </div>
+    </div>
+  </body>
+</html>

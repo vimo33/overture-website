@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#544061",
+                        "on-error": "#490013",
+                        "on-background": "#f5ddff",
+                        "surface-container-highest": "#341a46",
+                        "surface": "#170624",
+                        "surface-tint": "#c1fffe",
+                        "primary-dim": "#00e6e6",
+                        "surface-bright": "#3c204f",
+                        "inverse-surface": "#fff7fd",
+                        "on-secondary": "#400040",
+                        "surface-container-low": "#1e0a2c",
+                        "error-dim": "#d73357",
+                        "secondary": "#ff51fa",
+                        "primary-container": "#00ffff",
+                        "on-primary-fixed-variant": "#006262",
+                        "primary": "#c1fffe",
+                        "on-tertiary-container": "#563e00",
+                        "on-primary-container": "#005d5d",
+                        "on-primary-fixed": "#004343",
+                        "tertiary-dim": "#eeb200",
+                        "inverse-on-surface": "#624d6f",
+                        "surface-container-lowest": "#000000",
+                        "secondary-dim": "#ff51fa",
+                        "on-error-container": "#ffb2b9",
+                        "surface-dim": "#170624",
+                        "primary-fixed-dim": "#00e6e6",
+                        "secondary-fixed": "#ffbdf3",
+                        "tertiary": "#ffd16f",
+                        "on-primary": "#006767",
+                        "secondary-container": "#a900a9",
+                        "primary-fixed": "#00f5f5",
+                        "on-secondary-fixed": "#620061",
+                        "on-secondary-fixed-variant": "#920091",
+                        "on-surface-variant": "#bca2c9",
+                        "tertiary-fixed-dim": "#eeb200",
+                        "surface-variant": "#341a46",
+                        "surface-container": "#250f34",
+                        "error-container": "#a70138",
+                        "error": "#ff6e84",
+                        "tertiary-fixed": "#ffbf00",
+                        "on-tertiary-fixed": "#3d2b00",
+                        "on-surface": "#f5ddff",
+                        "inverse-primary": "#006a6a",
+                        "surface-container-high": "#2d153d",
+                        "on-tertiary": "#614700",
+                        "tertiary-container": "#ffbf00",
+                        "on-secondary-container": "#fff5f9",
+                        "background": "#170624",
+                        "on-tertiary-fixed-variant": "#614700",
+                        "secondary-fixed-dim": "#ffa6f3",
+                        "outline": "#846d91"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Epilogue"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neon-glow-primary {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+        .neon-glow-secondary {
+            box-shadow: 0 0 20px rgba(255, 81, 250, 0.3);
+        }
+        .skew-bg {
+            transform: skewY(-3deg);
+        }
+        .skew-content {
+            transform: skewY(3deg);
+        }
+        .light-leak {
+            background: radial-gradient(circle at 0% 0%, rgba(255, 81, 250, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 100% 100%, rgba(0, 255, 255, 0.1) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary selection:text-white overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="docked full-width top-0 z-50 no-border bg-gradient-to-b from-[#170624] to-transparent fixed w-full">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1920px] mx-auto">
+<div class="font-['Space_Grotesk'] font-black text-3xl tracking-tighter text-[#00ffff]">OVERTURE</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-white/70 hover:text-[#ff51fa] transition-colors duration-300" href="#">Members</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-white/70 hover:text-[#ff51fa] transition-colors duration-300" href="#">Artists</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-white/70 hover:text-[#ff51fa] transition-colors duration-300" href="#">Venues</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#00ffff] border-b-4 border-[#00ffff] pb-1" href="#">Community</a>
+</nav>
+<button class="bg-primary-container text-on-primary font-headline font-bold uppercase px-6 py-2 tracking-tighter scale-95 active:scale-90 transition-transform">
+                GET ACCESS
+            </button>
+</div>
+</header>
+<main class="relative pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden light-leak">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Vibrant crowded local music venue with magenta and cyan stage lighting hitting a diverse group of people dancing and connecting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZAdE0_PvBCYcnPQpizOH83VgFmSZnZccbZLj1t9qRziTr9yJ_O1AFKuMjPTexGJKFaefDeZVHu0IK_z-vQ_iRRylObSJpGq3twti6mzKAaajWXYyXJlS3hrLBtK4ibDoa7inhPwQFYk7I_RBbI5qTNWWHnLWoaxQ13fHRCkQSPSMTt6ajwXuD3LClkdaIfLD1Iv7G5A6dHf-V0QfqLZJTFWwqr492mAfJRT_oofr192lreeDaq4BeD5HLS0GabOnLGD_UpkHPSxo"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-8">
+<h1 class="font-headline font-black text-6xl md:text-8xl lg:text-9xl tracking-tighter uppercase leading-[0.9] text-on-surface">
+                        A city becomes <br/>
+<span class="text-primary italic">more alive</span> <br/> 
+                        when people choose <br/> 
+                        to support what <br/> 
+                        is <span class="text-secondary">local.</span>
+</h1>
+<div class="mt-12 flex items-center gap-6">
+<span class="h-[2px] w-24 bg-primary"></span>
+<p class="font-headline font-bold text-xl uppercase tracking-widest text-primary-fixed">The Overture Community Manifesto</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Who this is for (Asymmetric Grid) -->
+<section class="py-32 bg-surface-container-low relative">
+<div class="skew-bg absolute inset-0 bg-surface-container-lowest z-0 h-full w-full"></div>
+<div class="container mx-auto px-8 relative z-10 skew-content">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-5">
+<h2 class="font-headline font-black text-5xl uppercase tracking-tighter text-secondary mb-8">Who this is for</h2>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-lg mb-12">
+                            Overture isn't for the spectators of life. It’s for the architects of the evening, the heartbeat of the underground, and the soul of the city.
+                        </p>
+<div class="space-y-4">
+<div class="p-6 bg-surface-container-highest border-l-4 border-primary">
+<h3 class="font-headline font-bold text-2xl uppercase text-on-surface">The Restless Creators</h3>
+<p class="font-body text-on-surface-variant mt-2">Artists pushing boundaries beyond the mainstream.</p>
+</div>
+<div class="p-6 bg-surface-container border-l-4 border-secondary">
+<h3 class="font-headline font-bold text-2xl uppercase text-on-surface">The Cultural Curators</h3>
+<p class="font-body text-on-surface-variant mt-2">Venues that serve as sanctuaries for sonic exploration.</p>
+</div>
+<div class="p-6 bg-surface-container-high border-l-4 border-tertiary">
+<h3 class="font-headline font-bold text-2xl uppercase text-on-surface">The Devoted Listeners</h3>
+<p class="font-body text-on-surface-variant mt-2">Fans who prioritize the depth of the experience over the hype of the brand.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-2 gap-4 mt-12 lg:mt-0">
+<div class="aspect-[4/5] bg-surface-bright p-2">
+<img class="w-full h-full object-cover" data-alt="Moody low-angle shot of a DJ in a dark club with sharp purple laser lights cutting through smoke" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkOKNMp4v7rqoY8zphdPpkaDVjBx8srynCgVfUue1u1OMML8Vsrqji9AFdI2Zo9vmAEei_r0m0MBgvS5z2ayG_9bkm3m5z6aiVnJ7iZ5Vr5SKEuMuhBws87UqJaIrNBPA6J8ATm4F7rM3i3Pz7LXKwWLdk0XKMgHK_FT9kc0-KXcKL1ZAVtTvfXv7CTUnZrOHHd5Pq2uAIWBr28iQEWSU0rOx5rM5FtZJhdm8PM_xJ8tmqKzewQcuDm4yXp3gATDfXAvFOheyzo78"/>
+</div>
+<div class="aspect-[4/5] bg-surface-bright p-2 translate-y-12">
+<img class="w-full h-full object-cover" data-alt="Close up of an electric guitar player on stage, silhouette against bright blue stage lights and fog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMC2YASzlauMwQsLD89oPudkxNxscIL7ZehGLtDh8l1iRshmuCBBbd2UDsRPwTJ9rUItnzTVm0tmih1dhplyFcFBPzgwGo3Aoel2Nv-xlRr0fKRJPyITZRZ-RXeo6bcypnlEXP3mlH_ViMb-e-7sZm7UnTUQ6s6Q1vrW3iyKWFbmF4WEJ3evbAYfB0FR5OeWNH7Is7tpVExl_w0kSeIm2SJt5yre7s7O3Qe7Hope0oFUwXi82sbUBdi7lnarnJXoJQNztkMhCcLgU"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What community means (Active Belonging) -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<h2 class="font-headline font-black text-6xl md:text-8xl uppercase tracking-tighter max-w-2xl leading-none">
+                        Active <br/><span class="text-primary">Belonging</span>
+</h2>
+<div class="max-w-md text-right">
+<p class="font-body text-lg text-on-surface-variant italic">
+                            "Community is a verb at Overture. It's the friction between a performance and the crowd that creates something new."
+                        </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<!-- Glassmorphism Card 1 -->
+<div class="bg-surface-container-high p-12 aspect-square flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-5xl text-primary group-hover:text-on-primary">groups</span>
+<div>
+<h4 class="font-headline font-bold text-3xl uppercase mb-4 group-hover:text-on-primary">Shared Equity</h4>
+<p class="font-body text-on-surface-variant group-hover:text-on-primary/80">Every member has a stake in the growth of the local ecosystem. We win when our artists win.</p>
+</div>
+</div>
+<!-- Glassmorphism Card 2 -->
+<div class="bg-surface-container p-12 aspect-square flex flex-col justify-between group hover:bg-secondary transition-colors duration-500">
+<span class="material-symbols-outlined text-5xl text-secondary group-hover:text-white">electric_bolt</span>
+<div>
+<h4 class="font-headline font-bold text-3xl uppercase mb-4 group-hover:text-white">Direct Impact</h4>
+<p class="font-body text-on-surface-variant group-hover:text-white/80">Cut out the middleman. Your support goes directly to the venues and performers you love.</p>
+</div>
+</div>
+<!-- Glassmorphism Card 3 -->
+<div class="bg-surface-container-highest p-12 aspect-square flex flex-col justify-between group hover:bg-tertiary transition-colors duration-500">
+<span class="material-symbols-outlined text-5xl text-tertiary group-hover:text-on-tertiary">key</span>
+<div>
+<h4 class="font-headline font-bold text-3xl uppercase mb-4 group-hover:text-on-tertiary">Deep Access</h4>
+<p class="font-body text-on-surface-variant group-hover:text-on-tertiary/80">Members get backstage visibility into the creative process and early access to the city's best kept secrets.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What grows from this (Bento Grid) -->
+<section class="py-32 bg-surface overflow-hidden">
+<div class="container mx-auto px-8">
+<h2 class="font-headline font-black text-5xl uppercase tracking-tighter mb-16 text-center">What grows from this</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Large outdoor festival crowd at night with hundreds of glow sticks creating a sea of neon colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnHRv540vCMh1AN8Ct1JSBlKaagOZrZAxWEtsRjm_mqWHx6QwZjEOOnUsZynOv7N4gMQ37E5ELGYDK57qSiqlTAEGcLrnzPvmwWBNxW8D0fSsHNStUei_1Y_pDsxO6uorSSskz8HRlvgeroEAcYTe8DoRR7aPsx4sTy4CWZf1OwWkeuARUq3fHk-lYmU-JNHrchQjgN6fNsiTplx0sBYFENUpjfXW9miS6ZtM_Z6QzKDr_1bik1Hbz-wqhnJcz0QwqMJY-DrvMRvk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<h5 class="font-headline font-bold text-4xl uppercase text-primary">Micro-Festivals</h5>
+<p class="font-body text-white/80 mt-2">Community-funded takeovers of forgotten urban spaces.</p>
+</div>
+</div>
+<div class="md:col-span-2 md:row-span-1 bg-surface-container-high p-8 flex flex-col justify-center border-b-4 border-secondary">
+<h5 class="font-headline font-bold text-3xl uppercase text-secondary">Incubator Stages</h5>
+<p class="font-body text-on-surface-variant mt-4 text-xl">We provide the hardware and the audience; you provide the sound. New artists find their voice here.</p>
+</div>
+<div class="md:col-span-1 md:row-span-1 bg-surface-bright p-8 border-l-4 border-tertiary">
+<h5 class="font-headline font-bold text-2xl uppercase text-tertiary">Zine Archives</h5>
+<p class="font-body text-on-surface-variant mt-2">Capturing the ephemera of the scene for the next generation.</p>
+</div>
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-highest p-8 relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[120px]">hub</span>
+</div>
+<h5 class="font-headline font-bold text-2xl uppercase text-on-surface">The Hub</h5>
+<p class="font-body text-on-surface-variant mt-2 text-sm">A physical meeting point for digital members to bridge the void.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Future (Diagonal CTA) -->
+<section class="relative py-48 overflow-hidden">
+<div class="absolute inset-0 bg-secondary skew-y-3 origin-left translate-y-12"></div>
+<div class="container mx-auto px-8 relative z-10">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline font-black text-6xl md:text-8xl uppercase tracking-tighter text-on-secondary mb-8">Community Future</h2>
+<p class="font-body text-2xl text-on-secondary mb-12 max-w-2xl mx-auto font-medium">
+                        The sonic void is expanding. We are building tools for decentralized booking, artist housing, and permanent local sovereignty. 
+                    </p>
+<button class="bg-surface text-secondary font-headline font-black text-2xl uppercase px-12 py-6 tracking-tighter hover:bg-surface-container-highest transition-all neon-glow-secondary">
+                        Become part of Overture
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="full-width bottom-0 border-t-0 bg-[#000000] tonal-shift bg-[#170624]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-20 gap-8">
+<div class="font-['Space_Grotesk'] font-bold text-[#00ffff] text-3xl">OVERTURE</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-['Epilogue'] text-sm uppercase tracking-widest text-white/40 hover:text-[#00ffff] transition-all" href="#">Mission</a>
+<a class="font-['Epilogue'] text-sm uppercase tracking-widest text-white/40 hover:text-[#00ffff] transition-all" href="#">Transparency</a>
+<a class="font-['Epilogue'] text-sm uppercase tracking-widest text-white/40 hover:text-[#00ffff] transition-all" href="#">Terms</a>
+<a class="font-['Epilogue'] text-sm uppercase tracking-widest text-white/40 hover:text-[#00ffff] transition-all" href="#">Privacy</a>
+</div>
+<div class="font-['Epilogue'] text-sm uppercase tracking-widest text-[#ff51fa] dark:text-[#ff51fa] font-bold text-center md:text-right">
+                ©2024 OVERTURE. THE SONIC VOID AWAITS.
+            </div>
+</div>
+</footer>
+</body></html>

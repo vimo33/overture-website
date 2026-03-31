@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Epilogue:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#170624",
+              "error-container": "#a70138",
+              "on-tertiary-fixed": "#3d2b00",
+              "primary": "#c1fffe",
+              "surface-container-low": "#1e0a2c",
+              "secondary-dim": "#ff51fa",
+              "error-dim": "#d73357",
+              "inverse-primary": "#006a6a",
+              "outline-variant": "#544061",
+              "surface-variant": "#341a46",
+              "tertiary-fixed": "#ffbf00",
+              "on-secondary-fixed-variant": "#920091",
+              "on-tertiary-fixed-variant": "#614700",
+              "on-error": "#490013",
+              "tertiary-container": "#ffbf00",
+              "outline": "#846d91",
+              "error": "#ff6e84",
+              "on-primary": "#006767",
+              "on-secondary": "#400040",
+              "surface-container-high": "#2d153d",
+              "background": "#170624",
+              "inverse-surface": "#fff7fd",
+              "on-tertiary-container": "#563e00",
+              "surface-container-highest": "#341a46",
+              "secondary": "#ff51fa",
+              "primary-container": "#00ffff",
+              "on-primary-fixed": "#004343",
+              "on-primary-container": "#005d5d",
+              "surface-bright": "#3c204f",
+              "secondary-fixed-dim": "#ffa6f3",
+              "secondary-container": "#a900a9",
+              "tertiary": "#ffd16f",
+              "on-background": "#f5ddff",
+              "tertiary-fixed-dim": "#eeb200",
+              "on-tertiary": "#614700",
+              "on-error-container": "#ffb2b9",
+              "primary-fixed": "#00f5f5",
+              "tertiary-dim": "#eeb200",
+              "primary-dim": "#00e6e6",
+              "surface": "#170624",
+              "secondary-fixed": "#ffbdf3",
+              "on-secondary-fixed": "#620061",
+              "on-primary-fixed-variant": "#006262",
+              "surface-container": "#250f34",
+              "primary-fixed-dim": "#00e6e6",
+              "on-surface-variant": "#bca2c9",
+              "on-surface": "#f5ddff",
+              "inverse-on-surface": "#624d6f",
+              "surface-tint": "#c1fffe",
+              "surface-container-lowest": "#000000",
+              "on-secondary-container": "#fff5f9"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Epilogue"],
+              "label": ["Space Grotesk"],
+              "mono": ["JetBrains Mono"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neon-glow-primary {
+            text-shadow: 0 0 20px rgba(193, 255, 254, 0.6);
+        }
+        .neon-border-left {
+            box-shadow: -4px 0 0 0 #c1fffe;
+        }
+        .scaffold-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(84, 64, 97, 0.15) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .light-leak {
+            background: radial-gradient(circle at 0% 0%, rgba(255, 81, 250, 0.08) 0%, transparent 50%);
+        }
+    </style>
+
+<link rel="stylesheet" href="../assets/css/pitch-deck.css"/>
+<script defer src="../assets/js/pitch-deck.js"></script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container min-h-screen overflow-x-hidden deck-root" data-prev="./07-impact-through-every-subscription.html" data-next="./09-financial-scenarios.html">
+<a class="deck-index-link" href="./index.html">All Slides</a>
+<div class="deck-slide-number">08</div>
+<a class="deck-hitzone deck-hitzone--prev" data-deck-nav="prev" href="./07-impact-through-every-subscription.html">Previous slide</a>
+<a class="deck-hitzone deck-hitzone--next" data-deck-nav="next" href="./09-financial-scenarios.html">Next slide</a>
+
+<!-- Top Navigation (Shell suppressed for Slide 8 per logic, but brand anchor included as ghost element) -->
+<main class="relative min-h-screen flex flex-col md:flex-row items-center pt-32 pb-12 px-6 md:px-24 scaffold-bg light-leak">
+<!-- Left Column: Massive Metric Spotlight -->
+<div class="flex-1 w-full space-y-12">
+<div>
+<h1 class="font-headline font-black text-6xl md:text-8xl leading-none tracking-tighter mb-4 max-w-2xl">
+                    THE ZURICH <span class="text-primary block neon-glow-primary">OPPORTUNITY.</span>
+</h1>
+<div class="h-1 w-24 bg-secondary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 py-8">
+<!-- Stat Block 1 -->
+<div class="relative group">
+<div class="font-mono text-[120px] md:text-[140px] leading-none font-extrabold text-primary neon-glow-primary tracking-tighter">
+                        72%
+                    </div>
+<div class="mt-2 border-l-4 border-primary pl-4">
+<p class="font-headline font-bold text-2xl uppercase tracking-wider text-on-surface-variant">Active Audience</p>
+<p class="font-body text-lg text-outline">Swiss residents attending concerts annually</p>
+</div>
+</div>
+<!-- Stat Block 2 -->
+<div class="relative group">
+<div class="font-mono text-[120px] md:text-[140px] leading-none font-extrabold text-primary neon-glow-primary tracking-tighter">
+                        82
+                    </div>
+<div class="mt-2 border-l-4 border-secondary pl-4">
+<p class="font-headline font-bold text-2xl uppercase tracking-wider text-on-surface-variant">CHF Monthly Spend</p>
+<p class="font-body text-lg text-outline">Average per capita culture budget</p>
+</div>
+</div>
+<!-- Stat Block 3 -->
+<div class="relative group">
+<div class="font-mono text-[120px] md:text-[140px] leading-none font-extrabold text-primary neon-glow-primary tracking-tighter">
+                        40%
+                    </div>
+<div class="mt-2 border-l-4 border-tertiary pl-4">
+<p class="font-headline font-bold text-2xl uppercase tracking-wider text-on-surface-variant">The Eclectics</p>
+<p class="font-body text-lg text-outline">High-frequency genre-fluid listeners</p>
+</div>
+</div>
+<!-- Stat Block 4 -->
+<div class="relative group">
+<div class="font-mono text-[120px] md:text-[140px] leading-none font-extrabold text-primary neon-glow-primary tracking-tighter">
+                        30+
+                    </div>
+<div class="mt-2 border-l-4 border-error pl-4">
+<p class="font-headline font-bold text-2xl uppercase tracking-wider text-on-surface-variant">Partner Venues</p>
+<p class="font-body text-lg text-outline">Established network in Zurich core</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sidebar Persona Card -->
+<div class="w-full md:w-[400px] mt-12 md:mt-0 flex flex-col gap-6">
+<div class="bg-surface-container-high p-8 border-l-4 border-primary relative overflow-hidden">
+<!-- Subtle Background Texture for Card -->
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl">identity_platform</span>
+</div>
+<h3 class="font-headline font-black text-3xl uppercase tracking-tighter mb-6">Target Subscriber</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="person">person</span>
+<div>
+<p class="font-headline font-bold text-sm uppercase text-outline">Profile</p>
+<p class="font-body text-lg">Urban Professional, 24-42</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="stadium">stadium</span>
+<div>
+<p class="font-headline font-bold text-sm uppercase text-outline">Frequency</p>
+<p class="font-body text-lg">3+ Live events per month</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="bolt">bolt</span>
+<div>
+<p class="font-headline font-bold text-sm uppercase text-outline">Pain Point</p>
+<p class="font-body text-lg">Fragmented booking &amp; high entry friction</p>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<div class="bg-primary-container p-6 flex flex-col items-center justify-center text-center">
+<span class="font-headline font-black text-4xl text-on-primary">CHF 20/MONTH</span>
+<span class="font-label font-bold text-xs uppercase tracking-[0.2em] text-on-primary mt-1">Unlock Full Access</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 border border-outline-variant/20 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="font-headline font-bold text-sm uppercase text-outline">Market Penetration</span>
+<span class="font-mono text-primary text-sm">LEVEL: PEAK</span>
+</div>
+<!-- Audio Meter Style Progress -->
+<div class="flex gap-1 h-8">
+<div class="flex-1 bg-primary"></div>
+<div class="flex-1 bg-primary"></div>
+<div class="flex-1 bg-primary"></div>
+<div class="flex-1 bg-primary"></div>
+<div class="flex-1 bg-primary"></div>
+<div class="flex-1 bg-tertiary"></div>
+<div class="flex-1 bg-tertiary"></div>
+<div class="flex-1 bg-error"></div>
+<div class="flex-1 bg-error opacity-30"></div>
+<div class="flex-1 bg-error opacity-10"></div>
+</div>
+<p class="text-xs text-outline leading-tight font-body">Slide 8 Data Source: Zurich Cultural Analytics 2024. Revenue projections based on current venue capacity.</p>
+</div>
+</div>
+</main></body></html>

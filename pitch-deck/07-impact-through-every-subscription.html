@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OVERTURE — Slide 7: Impact Model</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c1fffe",
+                        "primary-container": "#00ffff",
+                        "secondary": "#ff51fa",
+                        "tertiary": "#ffd16f",
+                        "background": "#170624",
+                        "surface": "#170624",
+                        "surface-container-low": "#1e0a2c",
+                        "surface-container-high": "#2d153d",
+                        "surface-container-highest": "#341a46",
+                        "on-surface": "#f5ddff",
+                        "on-surface-variant": "#bca2c9",
+                        "outline": "#846d91",
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Epilogue"],
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #000000;
+            color: #f5ddff;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .sonic-bg {
+            background-image: linear-gradient(rgba(23, 6, 36, 0.85), rgba(0, 0, 0, 0.95)), 
+                              url('https://lh3.googleusercontent.com/aida-public/AB6AXuBms3Ke3hSP9ITm9CeKRll-4hJm0qfRXHyjmUsHWS5V0pBHtbuU1JCY2LCx_qsoHOb42EVnewUAzq7wlOeS5f4AeoL09uzMBmdXh3CHGPHPnz3p8O-PrJcpsu34hAJvfXx-3aGD5paW7-nUoX8uTkbgrOQC9Z-UCXdyIkamS_p7Q3DOFosoufEWqmpO4ydB2joiuIhXJlU6Nab65acllGQGppuHZChliffRZ9G6QlPd0B5S5iiOq3QAfKSkkyLf4DTp5e4UFbI9-sM');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+        .neon-glow-primary {
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+        }
+        .brutalist-border-cyan { border-left: 6px solid #00ffff; }
+        .brutalist-border-magenta { border-left: 6px solid #ff51fa; }
+        .brutalist-border-yellow { border-left: 6px solid #ffd16f; }
+        .brutalist-border-white { border-left: 6px solid #ffffff; }
+        
+        .skew-card {
+            clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 99%);
+        }
+    </style>
+
+<link rel="stylesheet" href="../assets/css/pitch-deck.css"/>
+<script defer src="../assets/js/pitch-deck.js"></script>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-black deck-root" data-prev="./06-where-we-are-today.html" data-next="./08-the-zurich-opportunity.html">
+<a class="deck-index-link" href="./index.html">All Slides</a>
+<div class="deck-slide-number">07</div>
+<a class="deck-hitzone deck-hitzone--prev" data-deck-nav="prev" href="./06-where-we-are-today.html">Previous slide</a>
+<a class="deck-hitzone deck-hitzone--next" data-deck-nav="next" href="./08-the-zurich-opportunity.html">Next slide</a>
+
+<div class="sonic-bg flex flex-col items-center justify-between py-12 px-20">
+<!-- Header Content -->
+<header class="w-full max-w-[1600px] text-left">
+<div class="text-cyan-400 font-headline font-black uppercase tracking-tighter text-2xl italic mb-4">OVERTURE</div>
+<h1 class="font-headline font-black text-7xl uppercase tracking-tighter leading-[0.85] text-white mb-6">
+                Impact through every <br/>
+<span class="text-primary neon-glow-primary italic">subscription.</span>
+</h1>
+<div class="flex items-center gap-6">
+<div class="h-1 w-24 bg-secondary"></div>
+<p class="font-body text-xl text-on-surface-variant font-light italic">
+                    The business model and impact model are structurally identical.
+                </p>
+</div>
+</header>
+<!-- Stakeholder Grid -->
+<div class="w-full max-w-[1600px] grid grid-cols-4 gap-6">
+<!-- Artists -->
+<div class="bg-surface-container-low/40 backdrop-blur-md p-8 brutalist-border-cyan skew-card">
+<h3 class="font-headline font-black text-xl uppercase tracking-widest text-primary mb-6">Artists</h3>
+<ul class="space-y-4 text-on-surface font-light">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">More fairly paid gigs.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">Less unpaid outreach.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">Transparent fee schedules aligned with SONART.</span>
+</li>
+</ul>
+</div>
+<!-- Venues -->
+<div class="bg-surface-container-high/40 backdrop-blur-md p-8 brutalist-border-magenta skew-card">
+<h3 class="font-headline font-black text-xl uppercase tracking-widest text-secondary mb-6">Venues</h3>
+<ul class="space-y-4 text-on-surface font-light">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">Guaranteed audience on underused nights.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">Bar revenue without booking risk.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">Mission alignment.</span>
+</li>
+</ul>
+</div>
+<!-- Subscribers -->
+<div class="bg-surface-container-highest/40 backdrop-blur-md p-8 brutalist-border-yellow skew-card">
+<h3 class="font-headline font-black text-xl uppercase tracking-widest text-tertiary mb-6">Subscribers</h3>
+<ul class="space-y-4 text-on-surface font-light">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">Curated local concerts.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">Discovery across venues.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">Visible proof their money supports artists.</span>
+</li>
+</ul>
+</div>
+<!-- Community -->
+<div class="bg-black/60 backdrop-blur-md p-8 brutalist-border-white skew-card">
+<h3 class="font-headline font-black text-xl uppercase tracking-widest text-white mb-6">Community</h3>
+<ul class="space-y-4 text-on-surface font-light">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-white text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">Stronger neighborhood culture.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-white text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">More distributed programming.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-white text-xs mt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-lg leading-tight">Measurable local circulation.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Additionality Test Section -->
+<div class="w-full max-w-[1600px] grid grid-cols-12 gap-8 items-stretch mb-8">
+<div class="col-span-4 bg-surface-container-low/50 border-l-8 border-primary-container p-8 flex flex-col justify-center">
+<h2 class="font-headline font-black text-4xl uppercase tracking-tighter leading-none mb-4 text-white">
+                    Additionality <br/><span class="text-primary-container">Test</span>
+</h2>
+<div class="h-[2px] w-16 bg-primary-container"></div>
+</div>
+<div class="col-span-8 bg-surface-container-high/60 backdrop-blur-xl p-8 border border-white/5 relative overflow-hidden">
+<div class="grid grid-cols-2 gap-10 relative z-10">
+<div class="font-body text-lg text-on-surface-variant leading-relaxed">
+                        Overture's impact is additional when subscriber demand enables concerts, artist payouts, and venue activation that <span class="text-white font-bold underline decoration-primary-container underline-offset-4">would not otherwise occur</span>. The pilot will measure this directly:
+                    </div>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-3 bg-black/40 border-l-2 border-primary-container">
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface">Are these gigs new?</span>
+<span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-black/40 border-l-2 border-primary-container">
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface">Are artists better off?</span>
+<span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-black/40 border-l-2 border-primary-container">
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface">Are venues genuinely strengthened?</span>
+<span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Decorative Light Leak -->
+<div class="absolute -right-20 -bottom-20 w-64 h-64 bg-primary/10 blur-[80px] rounded-full pointer-events-none"></div>
+</div>
+</div>
+<!-- Footer Decor -->
+<div class="w-full max-w-[1600px] flex items-end justify-between">
+<div class="flex items-center gap-4">
+<span class="text-white/20 font-headline font-black text-sm uppercase tracking-widest">Slide 07</span>
+<div class="w-12 h-px bg-white/20"></div>
+<span class="text-primary font-headline font-black text-sm uppercase tracking-widest">Impact Model</span>
+</div>
+<div class="flex flex-col items-end">
+<div class="font-headline text-[10px] font-black uppercase tracking-[0.5em] text-outline mb-4">Pilot Metric Framework v1.0</div>
+<div class="flex gap-1 h-8">
+<div class="w-1 bg-primary-container/40 h-[40%]"></div>
+<div class="w-1 bg-primary-container/60 h-[70%]"></div>
+<div class="w-1 bg-primary-container/80 h-[55%]"></div>
+<div class="w-1 bg-primary-container h-[90%]"></div>
+<div class="w-1 bg-secondary h-[100%]"></div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

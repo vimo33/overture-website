@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Epilogue:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed-dim": "#00e6e6",
+                        "surface-variant": "#341a46",
+                        "on-background": "#f5ddff",
+                        "on-primary-fixed": "#004343",
+                        "on-secondary-container": "#fff5f9",
+                        "secondary-dim": "#ff51fa",
+                        "outline": "#846d91",
+                        "secondary": "#ff51fa",
+                        "on-secondary-fixed": "#620061",
+                        "on-primary": "#006767",
+                        "primary-container": "#00ffff",
+                        "on-tertiary-fixed": "#3d2b00",
+                        "tertiary": "#ffd16f",
+                        "tertiary-fixed-dim": "#eeb200",
+                        "on-surface": "#f5ddff",
+                        "surface-container-high": "#2d153d",
+                        "primary-dim": "#00e6e6",
+                        "primary": "#c1fffe",
+                        "secondary-container": "#a900a9",
+                        "error-container": "#a70138",
+                        "tertiary-fixed": "#ffbf00",
+                        "tertiary-container": "#ffbf00",
+                        "surface-container-low": "#1e0a2c",
+                        "surface-container-highest": "#341a46",
+                        "on-error-container": "#ffb2b9",
+                        "secondary-fixed": "#ffbdf3",
+                        "on-tertiary-container": "#563e00",
+                        "on-tertiary": "#614700",
+                        "surface-container-lowest": "#000000",
+                        "surface-dim": "#170624",
+                        "surface": "#170624",
+                        "on-primary-fixed-variant": "#006262",
+                        "on-primary-container": "#005d5d",
+                        "inverse-primary": "#006a6a",
+                        "on-error": "#490013",
+                        "outline-variant": "#544061",
+                        "on-tertiary-fixed-variant": "#614700",
+                        "tertiary-dim": "#eeb200",
+                        "error": "#ff6e84",
+                        "surface-tint": "#c1fffe",
+                        "surface-container": "#250f34",
+                        "secondary-fixed-dim": "#ffa6f3",
+                        "on-surface-variant": "#bca2c9",
+                        "error-dim": "#d73357",
+                        "surface-bright": "#3c204f",
+                        "on-secondary": "#400040",
+                        "background": "#170624",
+                        "on-secondary-fixed-variant": "#920091",
+                        "inverse-surface": "#fff7fd",
+                        "inverse-on-surface": "#624d6f",
+                        "primary-fixed": "#00f5f5"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Epilogue"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-cyan {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+        }
+        .bg-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body overflow-hidden h-screen select-none">
+<div class="fixed inset-0 bg-noise pointer-events-none"></div>
+<div class="fixed top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-container/5 to-transparent pointer-events-none"></div>
+<main class="relative grid grid-cols-12 h-screen">
+<section class="col-span-5 flex flex-col justify-center px-16 z-10">
+<div class="mb-4">
+<span class="font-label text-primary uppercase tracking-[0.3em] text-xs">Operational Integrity</span>
+</div>
+<h1 class="font-headline text-7xl font-black text-on-surface leading-[0.9] uppercase italic tracking-tighter mb-8">
+                How <span class="text-primary-container">Fairness</span> Works.
+            </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-md leading-relaxed">
+                We have dismantled the traditional gatekeeper model to build a transparent ecosystem where equity is encoded into the stage scaffolding.
+            </p>
+<div class="mt-12 flex items-center gap-6">
+<div class="h-[1px] w-24 bg-primary-container/30"></div>
+<div class="bg-surface-container-highest px-4 py-2 border-l-4 border-primary-container">
+<p class="font-label text-xs uppercase tracking-widest text-primary">Slide 12 / Governance</p>
+</div>
+</div>
+</section>
+<section class="col-span-7 bg-surface-container-lowest p-12 flex flex-col justify-center">
+<div class="grid grid-cols-2 gap-px bg-outline-variant/20 border border-outline-variant/20">
+<div class="bg-surface-container-low p-8 relative group">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="groups">groups</span>
+<span class="text-[10px] font-label text-outline uppercase tracking-widest">01 / Curation</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase mb-3 text-on-surface">Artist selection</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">
+                        Open applications processed via blind meritocracy combined with curated outreach for underrepresented sonic profiles.
+                    </p>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-primary-container scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+</div>
+<div class="bg-surface-container-low p-8 relative group">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="payments">payments</span>
+<span class="text-[10px] font-label text-outline uppercase tracking-widest">02 / Equity</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase mb-3 text-on-surface">Pay structure</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">
+                        Guaranteed minimum per musician regardless of draw, indexed to local living costs and technical complexity of the set.
+                    </p>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-primary-container scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+</div>
+<div class="bg-surface-container-low p-8 relative group">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="published_with_changes">published_with_changes</span>
+<span class="text-[10px] font-label text-outline uppercase tracking-widest">03 / Balance</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase mb-3 text-on-surface">Rotation &amp; diversity</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">
+                        Strict anti-monopoly booking. No artist booked more than 2× per quarter to ensure a constantly evolving stage roster.
+                    </p>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-primary-container scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+</div>
+<div class="bg-surface-container-low p-8 relative group">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="gavel">gavel</span>
+<span class="text-[10px] font-label text-outline uppercase tracking-widest">04 / Oversight</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase mb-3 text-on-surface">Conflict of interest</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">
+                        Advisory board members are prohibited from booking themselves or affiliated labels. Pure third-party moderation.
+                    </p>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-primary-container scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+</div>
+<div class="bg-surface-container-low p-8 relative group">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="data_exploration">data_exploration</span>
+<span class="text-[10px] font-label text-outline uppercase tracking-widest">05 / Audit</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase mb-3 text-on-surface">Transparency</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">
+                        Monthly, Quarterly, and Annual reporting on fund allocation, booking demographics, and stage carbon footprint.
+                    </p>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-primary-container scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+</div>
+<div class="bg-surface-container-low p-8 relative group">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="account_balance">account_balance</span>
+<span class="text-[10px] font-label text-outline uppercase tracking-widest">06 / Legal</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase mb-3 text-on-surface">Governance</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light italic">
+                        Swiss Verein (Art. 60ff ZGB) structure. Non-profit status ensures all surplus is reinvested into the production rigging.
+                    </p>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-primary-container scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+</div>
+</div>
+</section>
+</main>
+<div class="fixed bottom-0 left-0 w-full p-8 flex justify-between items-end pointer-events-none">
+<div class="flex flex-col gap-1">
+<div class="flex gap-1 h-8 items-end">
+<div class="w-1 bg-primary-container h-3"></div>
+<div class="w-1 bg-primary-container h-5"></div>
+<div class="w-1 bg-primary-container h-2"></div>
+<div class="w-1 bg-primary-container h-6"></div>
+<div class="w-1 bg-primary-container h-4"></div>
+<div class="w-1 bg-tertiary h-7"></div>
+<div class="w-1 bg-error h-2"></div>
+</div>
+<p class="font-label text-[10px] text-primary tracking-widest uppercase">Signal Level: Optimal</p>
+</div>
+<div class="text-right">
+<p class="font-headline text-2xl font-black text-primary-container italic tracking-tighter uppercase">Sonic Void</p>
+<p class="font-label text-[10px] text-outline tracking-[0.4em] uppercase">Pitch Deck v3.0 // Mainstage</p>
+</div>
+</div>
+<div class="fixed top-0 left-0 w-full h-1.5 bg-surface-container-highest">
+<div class="h-full bg-primary-container w-[72%]"></div>
+</div>
+</body></html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sonic Void — Overture Closing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Epilogue:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed-dim": "#00e6e6",
+                        "surface-variant": "#341a46",
+                        "on-background": "#f5ddff",
+                        "on-primary-fixed": "#004343",
+                        "on-secondary-container": "#fff5f9",
+                        "secondary-dim": "#ff51fa",
+                        "outline": "#846d91",
+                        "secondary": "#ff51fa",
+                        "on-secondary-fixed": "#620061",
+                        "on-primary": "#006767",
+                        "primary-container": "#00ffff",
+                        "on-tertiary-fixed": "#3d2b00",
+                        "tertiary": "#ffd16f",
+                        "tertiary-fixed-dim": "#eeb200",
+                        "on-surface": "#f5ddff",
+                        "surface-container-high": "#2d153d",
+                        "primary-dim": "#00e6e6",
+                        "primary": "#c1fffe",
+                        "secondary-container": "#a900a9",
+                        "error-container": "#a70138",
+                        "tertiary-fixed": "#ffbf00",
+                        "tertiary-container": "#ffbf00",
+                        "surface-container-low": "#1e0a2c",
+                        "surface-container-highest": "#341a46",
+                        "on-error-container": "#ffb2b9",
+                        "secondary-fixed": "#ffbdf3",
+                        "on-tertiary-container": "#563e00",
+                        "on-tertiary": "#614700",
+                        "surface-container-lowest": "#000000",
+                        "surface-dim": "#170624",
+                        "surface": "#170624",
+                        "on-primary-fixed-variant": "#006262",
+                        "on-primary-container": "#005d5d",
+                        "inverse-primary": "#006a6a",
+                        "on-error": "#490013",
+                        "outline-variant": "#544061",
+                        "on-tertiary-fixed-variant": "#614700",
+                        "tertiary-dim": "#eeb200",
+                        "error": "#ff6e84",
+                        "surface-tint": "#c1fffe",
+                        "surface-container": "#250f34",
+                        "secondary-fixed-dim": "#ffa6f3",
+                        "on-surface-variant": "#bca2c9",
+                        "error-dim": "#d73357",
+                        "surface-bright": "#3c204f",
+                        "on-secondary": "#400040",
+                        "background": "#170624",
+                        "on-secondary-fixed-variant": "#920091",
+                        "inverse-surface": "#fff7fd",
+                        "inverse-on-surface": "#624d6f",
+                        "primary-fixed": "#00f5f5"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Epilogue"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .brutalist-grid {
+            background-image: 
+                linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .neon-radial {
+            background: radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.15) 0%, rgba(255, 81, 250, 0.1) 30%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body overflow-hidden">
+<!-- OVERTURE CLOSING CANVAS -->
+<main class="relative h-screen w-full flex flex-col justify-between p-12 brutalist-grid">
+<!-- Light Leaks & Grain Overlay -->
+<div class="absolute inset-0 neon-radial pointer-events-none"></div>
+<div class="absolute top-0 right-0 w-1/2 h-1/2 bg-secondary/5 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-primary-container/5 blur-[120px] rounded-full pointer-events-none"></div>
+<!-- Header: TopAppBar (Simplified for Focus) -->
+<header class="z-10 flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-headline font-black text-2xl text-primary tracking-tighter">Sonic Void</span>
+<span class="font-headline text-[10px] uppercase tracking-[0.3em] text-outline-variant">System Termination // Pitch Phase</span>
+</div>
+<div class="text-right">
+<span class="font-headline font-bold text-sm text-primary-fixed-dim">SLIDE 17</span>
+<div class="h-[2px] w-full bg-primary-container mt-1"></div>
+</div>
+</header>
+<!-- Central Content: Asymmetric Hero -->
+<section class="z-10 flex flex-col lg:flex-row items-end gap-12 mt-12">
+<div class="lg:w-2/3">
+<h1 class="font-headline font-black text-[12vw] leading-[0.85] text-primary-container tracking-tighter uppercase mb-8">
+                    OVERTURE
+                </h1>
+<div class="max-w-2xl border-l-4 border-secondary pl-8">
+<p class="font-body text-2xl md:text-3xl font-light leading-snug text-on-surface-variant italic">
+                        "Overture is not asking to fund a finished model. It is asking to fund a disciplined <span class="text-secondary font-bold">Zurich pilot</span>..."
+                    </p>
+</div>
+</div>
+<!-- Founders Block: Neon Data Block Style -->
+<div class="lg:w-1/3 w-full bg-surface-container-high p-8 border-r-4 border-primary-container">
+<h3 class="font-headline font-bold text-xs tracking-widest text-primary-container uppercase mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="groups">groups</span>
+                    Founder Roster
+                </h3>
+<ul class="space-y-4">
+<li class="flex flex-col">
+<span class="font-headline font-bold text-lg leading-none">Vikas Mohan</span>
+<span class="text-[10px] uppercase tracking-tighter text-outline">Lead Architect</span>
+</li>
+<li class="flex flex-col">
+<span class="font-headline font-bold text-lg leading-none">Miloud Genova</span>
+<span class="text-[10px] uppercase tracking-tighter text-outline">Visual Engine</span>
+</li>
+<li class="flex flex-col">
+<span class="font-headline font-bold text-lg leading-none">Mira Tyrina</span>
+<span class="text-[10px] uppercase tracking-tighter text-outline">Production Ops</span>
+</li>
+<li class="flex flex-col">
+<span class="font-headline font-bold text-lg leading-none">Francesco Braggio</span>
+<span class="text-[10px] uppercase tracking-tighter text-outline">Sonic Engineer</span>
+</li>
+<li class="flex flex-col">
+<span class="font-headline font-bold text-lg leading-none">Maurus Gross</span>
+<span class="text-[10px] uppercase tracking-tighter text-outline">Execution Lead</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- Footer: Contact & Structural Rigging -->
+<footer class="z-10 flex flex-col md:flex-row justify-between items-end gap-8 pb-4">
+<div class="flex gap-12">
+<div class="flex flex-col">
+<span class="font-headline font-bold text-[10px] text-secondary uppercase tracking-[0.2em] mb-2">Connect</span>
+<a class="font-body text-xl hover:text-primary transition-colors" href="mailto:hello@sonicvoid.audio">hello@sonicvoid.audio</a>
+<span class="font-body text-lg text-outline-variant">+41 44 000 00 00</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-[10px] text-secondary uppercase tracking-[0.2em] mb-2">Location</span>
+<span class="font-body text-xl">Zurich, Switzerland</span>
+<span class="font-body text-lg text-outline-variant">CH-8001</span>
+</div>
+</div>
+<!-- The Action: Stage Exit -->
+<div class="flex flex-col items-end">
+<div class="flex gap-2 mb-4">
+<div class="w-2 h-8 bg-primary"></div>
+<div class="w-2 h-8 bg-primary-container"></div>
+<div class="w-2 h-8 bg-secondary"></div>
+<div class="w-2 h-8 bg-tertiary"></div>
+</div>
+<button class="bg-primary-container text-on-primary font-headline font-black px-10 py-5 uppercase tracking-widest text-sm hover:bg-primary-fixed transition-all active:scale-95 flex items-center gap-4 group">
+                    Begin Overture
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</footer>
+<!-- Decorative Elements: Brutalist Rigging -->
+<div class="absolute right-0 top-1/4 flex flex-col gap-1 opacity-20 pointer-events-none">
+<div class="w-24 h-1 bg-primary"></div>
+<div class="w-48 h-1 bg-primary"></div>
+<div class="w-12 h-1 bg-primary"></div>
+</div>
+<!-- Ambient Photography Background Overlay -->
+<div class="absolute inset-0 -z-10 opacity-20 grayscale mix-blend-overlay overflow-hidden">
+<img alt="Concert stage silhouettes" class="w-full h-full object-cover" data-alt="dramatic wide shot of a concert stage with silhouettes of crowds and structural beams under intense cyan and magenta spotlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwuUIZp0oUIpO3G5spUgmGsAEXLe6OkFuC20l_RN4BvQvolgz3v9JufxxaqLareN8PwUcgIJ0lENLIjq59aLSfo_gTE6TZKOM3IXYI5WZIwbfW-sOugk7ACom8k6gMJ3yqYTZtll96GX5SiusxLTLF6JoxCjMPPBpg4S2fZWv5liUkhWpzBxcNssFGddqrO6jDde_IZMbaWyWLXcfz1rqvTvloEGP_VWfOUB_imhAhVd2Rc4uUnPO1OiDX0sXQyNtQ10g2xzfFzvA"/>
+</div>
+</main>
+</body></html>

@@ -1,0 +1,101 @@
+body.deck-root {
+  margin: 0;
+  overflow: hidden;
+  background: #170624;
+}
+
+body.deck-root::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top left, rgba(255, 81, 250, 0.08), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(0, 255, 255, 0.08), transparent 26%);
+  mix-blend-mode: screen;
+}
+
+body.deck-root main,
+body.deck-root section,
+body.deck-root header,
+body.deck-root footer {
+  box-sizing: border-box;
+}
+
+body.deck-root .material-symbols-outlined {
+  vertical-align: middle;
+}
+
+body.deck-root .rounded-full,
+body.deck-root [class*="rounded-"] {
+  border-radius: 0 !important;
+}
+
+body.deck-root img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body.deck-root [class*="hover:"],
+body.deck-root .group {
+  transition: none !important;
+}
+
+body.deck-root .deck-clean {
+  pointer-events: none !important;
+}
+
+body.deck-root .deck-fill-screen {
+  min-height: 100vh;
+}
+
+body.deck-root .deck-slide-number {
+  position: fixed;
+  top: 22px;
+  right: 26px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: rgba(245, 221, 255, 0.4);
+  z-index: 60;
+}
+
+body.deck-root .deck-index-link {
+  position: fixed;
+  top: 22px;
+  left: 26px;
+  z-index: 60;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(245, 221, 255, 0.55);
+  text-decoration: none;
+}
+
+body.deck-root .deck-index-link:hover {
+  color: rgba(0, 255, 255, 0.9);
+}
+
+body.deck-root .deck-hitzone {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 8vw;
+  min-width: 56px;
+  z-index: 55;
+  text-indent: -9999px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+body.deck-root .deck-hitzone--prev {
+  left: 0;
+}
+
+body.deck-root .deck-hitzone--next {
+  right: 0;
+}

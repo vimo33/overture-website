@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Epilogue:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#ffbf00",
+              "on-error": "#490013",
+              "on-tertiary-fixed-variant": "#614700",
+              "primary-container": "#00ffff",
+              "surface-container-lowest": "#000000",
+              "on-error-container": "#ffb2b9",
+              "tertiary-container": "#ffbf00",
+              "on-surface": "#f5ddff",
+              "error-container": "#a70138",
+              "error-dim": "#d73357",
+              "surface-container-highest": "#341a46",
+              "surface": "#170624",
+              "secondary-dim": "#ff51fa",
+              "background": "#170624",
+              "on-primary-fixed": "#004343",
+              "surface-tint": "#c1fffe",
+              "on-tertiary-container": "#563e00",
+              "surface-variant": "#341a46",
+              "on-surface-variant": "#bca2c9",
+              "error": "#ff6e84",
+              "secondary-fixed-dim": "#ffa6f3",
+              "inverse-primary": "#006a6a",
+              "secondary-container": "#a900a9",
+              "outline": "#846d91",
+              "secondary-fixed": "#ffbdf3",
+              "inverse-surface": "#fff7fd",
+              "surface-container": "#250f34",
+              "surface-dim": "#170624",
+              "tertiary-dim": "#eeb200",
+              "on-tertiary": "#614700",
+              "on-primary": "#006767",
+              "on-secondary-fixed-variant": "#920091",
+              "on-secondary-fixed": "#620061",
+              "on-tertiary-fixed": "#3d2b00",
+              "tertiary": "#ffd16f",
+              "on-primary-container": "#005d5d",
+              "primary-dim": "#00e6e6",
+              "on-secondary-container": "#fff5f9",
+              "on-primary-fixed-variant": "#006262",
+              "primary": "#c1fffe",
+              "surface-bright": "#3c204f",
+              "secondary": "#ff51fa",
+              "surface-container-low": "#1e0a2c",
+              "tertiary-fixed-dim": "#eeb200",
+              "primary-fixed": "#00f5f5",
+              "surface-container-high": "#2d153d",
+              "outline-variant": "#544061",
+              "on-background": "#f5ddff",
+              "on-secondary": "#400040",
+              "inverse-on-surface": "#624d6f",
+              "primary-fixed-dim": "#00e6e6"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Epilogue"],
+              "label": ["Space Grotesk"],
+              "mono": ["JetBrains Mono"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #170624; }
+        .grid-pattern {
+            background-image: linear-gradient(to right, #341a46 1px, transparent 1px), linear-gradient(to bottom, #341a46 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+
+<link rel="stylesheet" href="../assets/css/pitch-deck.css"/>
+<script defer src="../assets/js/pitch-deck.js"></script>
+</head>
+<body class="font-body text-on-surface overflow-x-hidden deck-root" data-prev="./08-the-zurich-opportunity.html" data-next="./10-venue-participation-model.html">
+<a class="deck-index-link" href="./index.html">All Slides</a>
+<div class="deck-slide-number">09</div>
+<a class="deck-hitzone deck-hitzone--prev" data-deck-nav="prev" href="./08-the-zurich-opportunity.html">Previous slide</a>
+<a class="deck-hitzone deck-hitzone--next" data-deck-nav="next" href="./10-venue-participation-model.html">Next slide</a>
+
+<!-- Top Navigation -->
+<!-- Main Content Canvas -->
+<main class="relative min-h-screen pt-32 pb-24 px-8 grid-pattern">
+<!-- Background Light Leak -->
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/5 blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/5 blur-[150px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto">
+<!-- Header Section -->
+<header class="mb-16 border-l-8 border-primary pl-8">
+<h1 class="text-5xl md:text-7xl font-headline font-black uppercase tracking-tighter leading-none mb-4">
+                    Financial scenarios<br/>
+<span class="text-primary">at CHF 20/month</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl font-light">
+                    Projected revenue distribution and concert frequency based on subscriber milestones. 
+                    Calculated for optimal artist sustainability.
+                </p>
+</header>
+<!-- Data Dashboard Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-stretch">
+<!-- Scenario 1 -->
+<div class="bg-surface-container-low p-8 flex flex-col justify-between group hover:bg-surface-container-high transition-all duration-300">
+<div>
+<div class="font-headline text-on-surface-variant uppercase tracking-widest text-sm mb-8">Scenario 01</div>
+<div class="font-mono text-4xl font-bold mb-2">50 SUBS</div>
+<div class="h-1 w-12 bg-outline-variant mb-12"></div>
+</div>
+<div class="space-y-8">
+<div>
+<span class="block text-xs uppercase tracking-tighter text-on-surface-variant mb-1">Monthly Rev</span>
+<div class="font-mono text-2xl text-primary">CHF 1,000</div>
+</div>
+<div>
+<span class="block text-xs uppercase tracking-tighter text-on-surface-variant mb-1">Frequency</span>
+<div class="font-mono text-xl text-on-surface">~0.5 CONCERTS</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/20">
+<span class="block text-xs uppercase tracking-tighter text-on-surface-variant mb-1">Artist Fee</span>
+<div class="font-mono text-xl text-secondary">CHF 400</div>
+</div>
+</div>
+</div>
+<!-- Scenario 2 -->
+<div class="bg-surface-container-low p-8 flex flex-col justify-between group hover:bg-surface-container-high transition-all duration-300">
+<div>
+<div class="font-headline text-on-surface-variant uppercase tracking-widest text-sm mb-8">Scenario 02</div>
+<div class="font-mono text-4xl font-bold mb-2">150 SUBS</div>
+<div class="h-1 w-12 bg-outline-variant mb-12"></div>
+</div>
+<div class="space-y-8">
+<div>
+<span class="block text-xs uppercase tracking-tighter text-on-surface-variant mb-1">Monthly Rev</span>
+<div class="font-mono text-2xl text-primary">CHF 3,000</div>
+</div>
+<div>
+<span class="block text-xs uppercase tracking-tighter text-on-surface-variant mb-1">Frequency</span>
+<div class="font-mono text-xl text-on-surface">1.5–2 CONCERTS</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/20">
+<span class="block text-xs uppercase tracking-tighter text-on-surface-variant mb-1">Artist Fee</span>
+<div class="font-mono text-xl text-secondary">CHF 500</div>
+</div>
+</div>
+</div>
+<!-- Scenario 3 (HIGHLIGHTED) -->
+<div class="bg-surface-bright p-8 flex flex-col justify-between border-4 border-primary shadow-[0_0_40px_rgba(0,255,255,0.15)] relative z-10 scale-105">
+<div class="absolute -top-4 right-8 bg-primary text-on-primary px-3 py-1 font-headline font-bold text-xs uppercase tracking-widest">Target Zone</div>
+<div>
+<div class="font-headline text-primary uppercase tracking-widest text-sm mb-8">Scenario 03</div>
+<div class="font-mono text-4xl font-black mb-2 text-white">200 SUBS</div>
+<div class="h-1 w-24 bg-primary mb-12"></div>
+</div>
+<div class="space-y-8">
+<div>
+<span class="block text-xs uppercase tracking-tighter text-primary-fixed mb-1">Monthly Rev</span>
+<div class="font-mono text-3xl text-primary font-bold">CHF 4,000</div>
+</div>
+<div>
+<span class="block text-xs uppercase tracking-tighter text-on-surface-variant mb-1">Frequency</span>
+<div class="font-mono text-xl text-on-surface">2–3 CONCERTS</div>
+</div>
+<div class="pt-6 border-t border-primary/30">
+<span class="block text-xs uppercase tracking-tighter text-secondary mb-1 font-bold">Artist Fee</span>
+<div class="font-mono text-2xl text-secondary font-bold">CHF 500+</div>
+</div>
+</div>
+</div>
+<!-- Scenario 4 -->
+<div class="bg-surface-container-low p-8 flex flex-col justify-between group hover:bg-surface-container-high transition-all duration-300">
+<div>
+<div class="font-headline text-on-surface-variant uppercase tracking-widest text-sm mb-8">Scenario 04</div>
+<div class="font-mono text-4xl font-bold mb-2">400 SUBS</div>
+<div class="h-1 w-12 bg-outline-variant mb-12"></div>
+</div>
+<div class="space-y-8">
+<div>
+<span class="block text-xs uppercase tracking-tighter text-on-surface-variant mb-1">Monthly Rev</span>
+<div class="font-mono text-2xl text-primary">CHF 8,000</div>
+</div>
+<div>
+<span class="block text-xs uppercase tracking-tighter text-on-surface-variant mb-1">Frequency</span>
+<div class="font-mono text-xl text-on-surface">4–6 CONCERTS</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/20">
+<span class="block text-xs uppercase tracking-tighter text-on-surface-variant mb-1">Artist Fee</span>
+<div class="font-mono text-xl text-secondary">CHF 500–600</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Level Meter Graphic (Subtle) -->
+<div class="mt-20 flex items-end gap-1 h-32 opacity-20 pointer-events-none">
+<div class="flex-1 bg-primary h-1/4"></div>
+<div class="flex-1 bg-primary h-1/3"></div>
+<div class="flex-1 bg-primary h-1/2"></div>
+<div class="flex-1 bg-primary h-3/4"></div>
+<div class="flex-1 bg-primary h-full"></div>
+<div class="flex-1 bg-primary h-2/3"></div>
+<div class="flex-1 bg-tertiary h-1/2"></div>
+<div class="flex-1 bg-tertiary h-3/4"></div>
+<div class="flex-1 bg-tertiary h-full"></div>
+<div class="flex-1 bg-error h-2/3"></div>
+<div class="flex-1 bg-error h-1/3"></div>
+</div>
+</div>
+</main></body></html>
