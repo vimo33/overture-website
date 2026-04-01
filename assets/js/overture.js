@@ -52,6 +52,19 @@
     });
   });
 
+  document.querySelectorAll("form[data-formsubmit]").forEach(function (form) {
+    var emailInput = form.querySelector('input[type="email"][name="email"]');
+    var replyToInput = form.querySelector('input[name="_replyto"]');
+    if (!emailInput || !replyToInput) return;
+
+    var syncReplyTo = function () {
+      replyToInput.value = emailInput.value.trim();
+    };
+
+    emailInput.addEventListener("input", syncReplyTo);
+    form.addEventListener("submit", syncReplyTo);
+  });
+
   if (!reduceMotion) {
     var parallaxNodes = Array.prototype.slice.call(document.querySelectorAll("[data-parallax]"));
     if (parallaxNodes.length) {
